@@ -1,0 +1,312 @@
+:: StoryTitle
+PART IV — MODERN ERA 
+
+
+:: StoryData
+{
+  "ifid": "397A29F2-2269-4577-9F89-04E5E4474F33",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 0.6
+}
+
+
+:: \ Outcome {"position":"600,225","size":"100,100"}
+''MEENA:''
+ “Then let’s build places where people meet, not hide.”
+
+(live: 2s)[
+(go-to: "Open House")
+]
+
+
+:: \ Outcome 2 {"position":"875,225","size":"100,100"}
+ She watches him longer than necessary — a recognition she cannot name.
+
+(live: 2s)[
+(go-to: "KLCC Rises")
+]
+
+
+:: \ Outcome 3 {"position":"1175,225","size":"100,100"}
+ ''AMEEN (smiling knowingly):''
+ “Some stories… never end.”
+ 
+ 
+ (live: 2s)[
+ (go-to:"The Storm of Reformasi")
+ ]
+
+
+:: \ Outcome 4 {"position":"1475,200","size":"100,100"}
+ ''RAHMANAH:''
+ “Whatever happens… this country must stay whole.”
+
+(live: 2s)[
+(go-to: "2000s to 2020 Pandemic ")
+]
+
+
+:: \ Outcome 5 {"position":"1825,200","size":"100,100"}
+She steps onto her balcony, watching the quiet city breathe.
+
+(live: 2s)[
+(go-to: "Final Reflection")
+]
+
+
+:: 2000s to 2020 Pandemic\  {"position":"1650,200","size":"100,100"}
+[Montage — MRT construction, schools reopening, smartphone era, Bersih rallies, quiet pandemic streets.]
+
+ I saw the digital age unfold like lightning.
+ I saw demonstrations bloom like flowers.
+ I saw silence return during the great illness of 2020…
+ just as it did in other ages of fear.
+ 
+RAHMANAH watches news of the lockdown.
+
+''MEENA (on speakerphone):''
+ “Stay home, ya? We old people must be careful.”
+
+''RAHMANAH:''
+ “Old? You? Never.”
+
+''AMEEN (now frail but calm):''
+ “Even in isolation… unity is found in how we protect one another.”
+
+He is remembering.
+I am remembering through him.
+Every life I have lived connects here.
+
+
+[[We endure. -> Outcome 5]]
+[[We heal. -> Outcome 5]]
+[[We remember. -> Outcome 5]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+:: Final {"position":"2150,225","size":"100,100"}
+The first humans remembered me in caves.
+ Melaka remembered me in firelight.
+ A nation remembered me in its struggle.
+ 
+Now… I return to the sky.
+ My wings carry all your stories.
+This land endures.
+ Its people endure.
+ And as long as they remember…
+ I will always return.
+ 
+The hornbill ascends into the dawn above KLCC.
+ The skyline glows.
+ Malaysia breathes.
+
+
+:: Final Reflection {"position":"2000,225","size":"100,100"}
+[Ambient: sunrise, soft wind, far-off azan]
+
+AMEEN sits with Rahmanah on a rooftop overlooking KLCC.
+His breath is shallow — not dying, just fading into another cycle.
+
+''AMEEN:''
+ “Rahmanah… do you ever wonder why you build?”
+
+''RAHMANAH (smiles softly):''
+ “To leave something for the next generation.
+ To say: we were here.
+ We cared.”
+ 
+AMEEN closes his eyes.
+
+''AMEEN:''
+ “And I must go.
+ My stories are finished… for now.”
+
+''RAHMANAH (shaken):''
+ “Ameen? What do you mean? Go where?”
+
+''AMEEN (fading, voice overlapping with Hornbill’s):''
+ “Back to the sky.
+ Back to memory.
+ My work ends here…
+ Yours continues.”
+ 
+A gust of wind lifts — forming a luminous silhouette of a hornbill.
+
+(live:5s)[
+(go-to: "Final")
+])
+ 
+
+
+:: KLCC Rises {"position":"1025,225","size":"100,100"}
+[Ambient: cranes, steel clangs, multilingual instructions shouted across scaffolding]
+
+KLCC foundation site.
+
+''RAHMANAH (studying blueprint):''
+ “This tower… it must reflect us.
+ All of us. Every race, every memory.”
+ 
+''MEENA (yelling to workers):''
+ “Angkat! Slowly—if jatuh, habis semua!”
+Workers laugh, sweating, joking across ethnic lines.
+
+I watched civilizations craft temples and palaces.
+ But this…
+ This is a dream of a people, not a king.
+
+AMEEN joins them, hands a stack of permits.
+ 
+''AMEEN (quietly):''
+ “When this stands… children will look up and believe anything is possible.”
+
+''RAHMANAH:''
+ “Do you really think so?”
+
+''AMEEN:''
+ “I’ve seen enough centuries to know hope when I see it.”
+ 
+She pauses — not understanding why his words feel ancient.
+
+
+[[You speak like you’ve lived many lives. -> Outcome 3]]
+[[Hope… yes. That’s what we’re building. -> Outcome 3]]
+[[What makes you so certain?-> Outcome 3]]
+
+
+
+
+
+
+
+
+
+
+:: Open House {"position":"725,225","size":"100,100"}
+[Ambient: laughter, clatter of plates, kuih aromas]
+
+A Deepavali open house. Malay, Chinese, Indian families mingling easily.
+ Children chase each other across the yard.
+ 
+''MEENA (offering murukku):''
+ “Eat lah. Unity begins in the stomach.”
+
+RAHMANAH smiles warmly.
+
+''RAHMANAH:''
+ “If only all problems could be solved with kuih.”
+AMEEN enters — older now, carrying files, wearing spectacles.
+ (He is the reincarnated Hornbill.)
+ 
+''AMEEN (soft, distant, smiling like someone who’s lived many lives):''
+ “Maybe food cannot solve everything…
+ But kindness can.”
+
+Even in this body, I feel the shadows of old wings.
+
+[[He seems familiar… -> Outcome 2]]
+[[He speaks like an old soul. -> Outcome 2]]
+
+
+
+:: Start {"position":"250,225","size":"100,100"}
+[Ambient: distant cheers, roosters, rustling flags]
+
+I have watched kingdoms rise, rivers shift, and empires waver.
+ Now I return once more… not to jungles, but to a nation being born.
+ 
+ 
+A small girl, RAHMANAH, holds her father’s hand amid the Merdeka crowds.
+ 
+''MEENA:''
+Rahmanah! Faster lah! Want to hear Tunku shout Merdeka or not?
+
+The crowd erupts—
+ MERDEKA!
+ MERDEKA!
+ MERDEKA!
+ Seven times. Each one a heartbeat.
+
+Freedom… the word flies on the wind like a bird remembering its sky.
+
+''RAHMANAH: :''
+One day… I will help build something beautiful for this country.
+
+[[The Nation Builds]] 
+
+
+:: The Nation Builds {"position":"450,250","size":"100,100"}
+[Ambient: construction tools, radio playing “Tanah Pusaka”]
+
+''RAHMANAH (now a young woman, an architect):''
+"The structure must hold. Not just technically… socially."
+
+''MEENA (now a civil engineer, half-joking):''
+ "Wah, architect only talk about feelings nowadays?"
+
+''RAHMANAH (laughing softly):''
+ "After 1969… how can I not?
+ I saw streets burn. Neighbours hide. Tears fall.
+ If we build without unity, everything collapses."
+
+She remembers the riots.
+ She remembers what fear does to a city.
+ 
+ 
+ [[A building must welcome everyone. -> Outcome]]
+ [[A building must heal old wounds. -> Outcome]]
+ [[A building must stand as long as hope stands. -> Outcome]]
+
+
+
+:: The Storm of Reformasi {"position":"1350,200","size":"100,100"}
+[Ambient: heavy rain, distant chants, police sirens, whispered fear]
+
+RAHMANAH and MEENA watch from a rooftop as crowds gather.
+Banners. Cries. Anguish. Determination.
+
+''MEENA:''
+ “Kuala Lumpur hasn’t seen this kind of fire since… you know.”
+
+''RAHMANAH (firm):''
+ “No more burning.
+ We want change, not chaos.”
+
+AMEEN appears beside them, soaked by rain.
+
+''AMEEN (looking at the crowds):''
+ “History repeats…
+ …but sometimes, it rises instead of falling.”
+
+ “From occupation to riots to protest…
+ This land has cried many times.
+ But each tear waters the soil of tomorrow.
+ 
+ 
+ [[People must be heard. -> Outcome 4]]
+ [[We need stability, not rage. -> Outcome 4]]
+ [[May this lead to something better. -> Outcome 4]]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

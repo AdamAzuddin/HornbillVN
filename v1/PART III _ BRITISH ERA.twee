@@ -1,0 +1,464 @@
+:: StoryTitle
+PART III — BRITISH ERA
+
+
+:: StoryData
+{
+  "ifid": "B0390F2C-540C-4BEA-AA7C-C50B09438A07",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Scene0_Dusk_Riverbank",
+  "zoom": 1
+}
+
+
+:: ChoiceCurriculum {"position":"1400,300","size":"100,100"}
+**CHE AZIZAH:**  
+“We follow the guidelines closely, Tuan.  
+The children excel in their exams.”
+
+Mr. Reid softens slightly.
+
+**MR. REID:**  
+“Good. Results are what matter.”
+
+[[→ Continue|Scene2AfterReid]]
+
+
+
+:: ChoiceLand {"position":"1400,100","size":"100,100"}
+**CHE AZIZAH:**  
+“They belong to this land, Tuan.  
+Teaching loyalty to their home is not rebellion.”
+
+Mr. Reid narrows his eyes.
+
+[[→ Continue|Scene2AfterReid]]
+
+
+:: ChoiceLandRemembers {"position":"3275,525","size":"100,100"}
+**CHE AZIZAH:**  
+“This land remembers everyone who loved it.”
+
+[[→ Continue|Scene6FinalFireworks]]
+
+
+
+:: ChoiceSilent {"position":"1400,500","size":"100,100"}
+
+Che Azizah remains silent.
+
+**MR. REID:**  
+“Hm. Silent respect. I approve.”
+
+[[→ Continue|Scene2AfterReid]]
+
+
+
+:: ChoiceUnityBegin {"position":"3100,525","size":"100,100"}
+**CHE AZIZAH:**  
+“Let unity begin with us.”
+
+[[→ Continue|Scene6FinalFireworks]]
+
+
+
+:: ChoiceWriteStory {"position":"2925,525","size":"100,100"}
+**CHE AZIZAH:**  
+“We are finally writing our own story.”
+
+[[→ Continue|Scene6FinalFireworks]]
+
+
+
+:: Scene 1 — Arrival {"position":"650,250","size":"100,100"}
+Che Azizah steps down carrying a bundle of schoolbooks.
+
+CHE AZIZAH: “Ameen? Are you ready? The children are waiting.”
+AMEEN closes the notebook.
+
+AMEEN: “Always, Cikgu. Education cannot wait, even if the roads do.”
+He tries to smile, but something in his eyes looks older than he is.
+
+THE HORNBILL (Narration): “She walks with purpose. He walks with memory.”
+ 
+ [[→ Walk toward the village|Scene1Path]]
+
+
+
+:: Scene0_Dusk_Riverbank {"position":"475,250","size":"100,100"}
+[Scene 0 — Dusk / Klang Riverbank, 1923]
+
+Ambient: cicadas, riverboats, distant tin mine clatter_
+
+A young Malay boy — **AMEEN** — sits alone on a wooden jetty, sketching a hornbill feather.
+
+**THE HORNBILL (Narration):**  
+“Reborn again…  
+Not a king, not a scribe…  
+Just a clerk with ink-stained fingers.”
+
+A gust of wind lifts the page.
+
+**AMEEN (thinking):**  
+“Strange… I’ve drawn this bird since childhood.”
+
+A carriage approaches.
+
+[[Continue →|Scene 1 — Arrival]]
+
+
+
+:: Scene1Path {"position":"800,250","size":"100,100"}
+They walk along the dirt path. Rubber trees line the horizon. Indian estate workers tap trees rhythmically. Chinese miners push carts of tin ore. Malay fishermen mend nets at the river’s edge.
+
+CHE AZIZAH (looking around): “A land of many hands… yet few of them meet.”
+
+AMEEN: “British policy. Separate villages, separate worlds.”
+
+CHE AZIZAH: “We teach children who never see each other outside class.
+How can unity grow when everyone grows in different soil?”
+
+AMEEN (quietly, almost like remembering past lives): “But roots still find each other beneath the ground.”
+
+Che Azizah pauses, studying him.
+CHE AZIZAH: “Sometimes you speak like someone far older.”
+
+[[→ Enter the village school|Scene2Schoolhouse]]
+
+
+
+
+:: Scene2AfterReid {"position":"1675,300","size":"100,100"}
+Mr. Reid turns to the students.
+
+**MR. REID:**  
+“The British Empire values order.  
+Remember that as you grow.”
+
+He exits.
+
+The students exhale collectively.
+
+**STUDENT:**  
+“Cikgu… does he scare you?”
+
+**CHE AZIZAH:**  
+“No. What scares me is forgetting who we really are.”
+
+Ameen glances down at his notebook.  
+The hornbill sketch is half-finished.
+
+**THE HORNBILL (Narration):**  
+“I have seen rulers rise and fall.  
+But fear…  
+fear is always the first chain.”
+
+[[→ Next|Scene3JapaneseOccupation]]
+
+
+
+:: Scene2Choice {"position":"1150,250","size":"100,100"}
+**How does Che Azizah respond?**
+
+[[“These children belong to this land.”|ChoiceLand]]
+
+[[“We follow the curriculum, sir.”|ChoiceCurriculum]]
+
+[[Stay silent and observe him.|ChoiceSilent]]
+
+
+
+:: Scene2Schoolhouse {"position":"975,250","size":"100,100"}
+[Scene 2 — Village Schoolhouse, Morning]
+
+The school is small but lively.  
+A wooden board, kerosene lamps, chalk dust.
+
+**STUDENTS:**  
+“Good morning, Cikgu!”
+
+**CHE AZIZAH:**  
+“Good morning! Today, we learn not only English…  
+but also who we are.”
+
+She writes on the board:
+
+**LOYALTY — SETIA**
+
+The students read it aloud.
+
+From outside, someone clears their throat sharply.
+
+---
+
+**[Enter Mr. Alister Reid]**
+
+White linen suit. Pith helmet. Clipboard under the arm.  
+Every child falls silent.
+
+**MR. REID:**  
+“Cikgu Azizah. I trust the curriculum is being followed?”
+
+**CHE AZIZAH:**  
+“Yes, Tuan Reid.”
+
+Mr. Reid scans the classroom.
+
+**MR. REID:**  
+“English first. Always.  
+His Majesty’s government expects efficiency.”
+
+He taps the chalkboard with his cane.
+
+**MR. REID:**  
+“And avoid… nationalistic vocabulary.  
+‘Setia’ can be misunderstood.”
+
+**CHE AZIZAH (calm):**  
+“Loyalty is a universal virtue, Tuan.”
+
+**MR. REID:**  
+“Loyalty to the Crown, ideally.”
+
+Ameen watches silently, his fists tightening.
+
+[[→ Continue|Scene2Choice]]
+
+
+
+
+:: Scene3JapaneseOccupation {"position":"1900,300","size":"100,100"}
+[Scene 3 — Japanese Occupation, 1942]
+
+The classroom darkens.
+
+A distant siren wails.  
+Boots march in rigid rhythm.
+
+**CHE AZIZAH (Narration):**  
+“Then came the years when even the sun seemed afraid to rise.”
+
+Japanese commands echo outside.
+
+Soldiers storm the school.  
+English signboards are torn down and replaced with Japanese script.
+
+Rice rations are handed out sparingly.
+
+Children clutch empty bowls.  
+Mothers avert their eyes.
+
+A teacher whispers urgently.
+
+**TEACHER (off-screen):**  
+“Azizah, hide the English books!”
+
+Outside, young boys are herded away for forced labor.
+
+Ameen — now older — looks toward the sky, unmoving.
+
+[[→ Continue|Scene3Trauma]]
+
+
+
+:: Scene3LiberationTransition {"position":"2300,300","size":"100,100"}
+[Scene Transition — Liberation, 1945]
+
+British troops march back through Malaya after Japan surrenders.
+Villagers watch with mixed emotions — relief and resentment.
+
+
+**MR. REID((older, weary)):**  
+“We… have returned.”
+
+**CHE AZIZAH:**
+“But not as you left.”
+
+[[→ Continue|Scene4Aftermath]]
+
+
+
+:: Scene3Trauma {"position":"2100,300","size":"100,100"}
+[Scene 3.1 — Moment of Trauma]
+
+A Japanese officer strikes a civilian for failing to bow correctly.
+
+The sound cracks through the crowd.
+
+Che Azizah steps forward, shaken but defiant.
+
+**CHE AZIZAH:**  
+“Enough! He did nothing wrong!”
+
+The officer turns slowly.  
+Raises his hand.
+
+Ameen steps in front of her.
+
+**AMEEN:**  
+“Hit me instead.”
+
+The officer hesitates.
+ The blow lands—Ameen falls.
+
+**THE HORNBILL (Narration):**
+“In every life, I stand before the storm.”
+
+
+[[→ Continue|Scene3LiberationTransition]]
+
+
+
+:: Scene4Aftermath {"position":"2500,300","size":"100,100"}
+[Scene 4 — Aftermath & Rise of Nationalism]
+
+Kopitiam, late afternoon. Ceiling fans turning slowly.
+
+Che Azizah meets Ameen — now with a slight limp from his wartime injury.
+
+**CHE AZIZAH:**  
+“You protected me. Why?”
+
+**AMEEN:**  
+“…I don’t know.  
+Sometimes it feels like my life belongs to something older.  
+Something that keeps returning to this land.”
+
+Che Azizah smiles softly.
+
+**CHE AZIZAH:**  
+“Whoever you were…  
+you are Ameen now.  
+And this nation needs people like you.”
+
+He meets her gaze—recognition flickering, ancient and deep.
+
+[[→ Continue|Scene4Meeting]]
+
+
+
+
+:: Scene4Meeting {"position":"2700,300","size":"100,100"}
+[Scene 4.1 — Entry of Mr. Reid]
+
+Mr. Reid enters the kopitiam, attracting stares.  
+He sits stiffly.
+
+**MR. REID:**  
+“Strange times, Cikgu.  
+The Japanese shattered our authority.  
+And now… nationalism grows like wildfire.”
+
+**CHE AZIZAH (calm):**  
+“Fires grow where there is dry grass.”
+
+**MR. REID:**  
+“You think we caused the dryness?”
+
+**CHE AZIZAH:**  
+“Divide-and-rule leaves cracks, Tuan.  
+Cracks become sparks.”
+
+Mr. Reid sighs — age weighing on him.
+
+**MR. REID:**  
+“Efficiency was the goal. Never cruelty.”
+
+**AMEEN:**  
+“Efficient or not…  
+you separated lives.  
+Malay farmers. Chinese miners. Indian laborers.  
+We grew up together only on paper.”
+
+**MR. REID:**  
+“Order is efficiency.”
+
+**CHE AZIZAH:**  
+“Order without understanding is not peace.  
+It’s silence.”
+
+MR. REID looks away.
+[[→ Continue|Scene5DeclarationApproaches]]
+
+
+
+
+
+
+:: Scene5Choice {"position":"3100,300","size":"100,100"}
+**What is Che Azizah’s final reflection before Merdeka?**
+
+[[“We are finally writing our own story.”|ChoiceWriteStory]]
+
+[[“Let unity begin with us.”|ChoiceUnityBegin]]
+
+[[“This land remembers everyone who loved it.”|ChoiceLandRemembers]]
+
+
+
+:: Scene5DeclarationApproaches {"position":"2900,300","size":"100,100"}
+[Scene 5 — The Declaration Approaches (1957)]
+
+Crowds gather near the town field.  
+Flags sewn by local women flutter.  
+Children rehearse chants.  
+Ameen helps hang garlands.
+
+**CHE AZIZAH** lifts a Merdeka banner.
+
+**AMEEN:**  
+“Cikgu… do you ever wonder what comes after independence?”
+
+**CHE AZIZAH:**  
+“Responsibility.  
+Hard work.  
+Forgiveness.”
+
+**AMEEN:**  
+“And unity?”
+
+**CHE AZIZAH (gently):**  
+“That will take longer.  
+But it begins here.”
+
+**THE HORNBILL (Narration):**  
+“I have watched ages turn.  
+Compassion birthed kingdoms.  
+Unity guarded ports.  
+Memory shaped resistance.”
+
+Ameen looks up as a hornbill flies overhead.
+
+**AMEEN:**  
+“…Why does that bird feel familiar?”
+
+**CHE AZIZAH (smiling):**  
+“Maybe it’s been watching us longer than we know.”
+
+[[→ Reflect Che Azizah's thoughts|Scene5Choice]]
+
+
+
+:: Scene6FinalFireworks {"position":"3075,725","size":"100,100"}
+[Scene 6 — Midnight / Fireworks in the Distance]
+
+Villagers cheer.  
+Fireworks bloom across the sky.  
+Children wave small flags.
+
+**CHE AZIZAH:**  
+“Merdeka…  
+May we deserve it.”
+
+**AMEEN (thinking):**  
+“Another era ends.  
+Another begins.”
+
+**THE HORNBILL (Narration):**  
+“The river of time pulls me onward.  
+One more age awaits…  
+before I return to the sky.”
+
+→ END OF PART III — THE BRITISH ERA
+

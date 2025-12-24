@@ -1,0 +1,198 @@
+:: Choice1Lively {"position":"400,575","size":"100,100"}
+**DANG JELITA:**  
+“Lively? This is a quiet day. Wait until the monsoon winds change—ships will arrive like migrating birds.”
+
+[[Next|PauseByRiverside]]
+
+
+:: Choice1Nations {"position":"650,575","size":"100,100"}
+**HANG DAYANG:**  
+“Strategic geography. Parameswara chose well when he founded this place around the year 1400. Control the strait, and you control the flow of the world.”
+
+[[Next|PauseByRiverside]]
+
+
+:: Choice1Order {"position":"525,575","size":"100,100"}
+**HANG DAYANG:**  
+“Order comes from law and faith. Since the rulers embraced Islam in 1414, the court’s governance shifted— from Hindu-Buddhist customs to Islamic jurisprudence.”
+
+**DANG JELITA:**  
+“And a firm Bendahara. Without him, even angels would quarrel.”
+
+[[Next|PauseByRiverside]]
+
+
+:: Choice2 {"position":"400,950","size":"100,100"}
+Why did you join?  
+
+* [[“To record the truth for future generations.”|Choice2Truth]]  
+* [[“To serve the Sultan and the palace.”|Choice2Loyalty]]  
+* [[“To witness the rise and fall of nations.”|Choice2Curiosity]]
+
+
+:: Choice2Curiosity {"position":"525,1075","size":"100,100"}
+**HANG DAYANG (pauses):**  
+“A dangerous curiosity. But perhaps necessary. History does not wait for those who fear it.”
+
+[[Next|PalaceSummons]]
+
+
+:: Choice2Loyalty {"position":"400,1075","size":"100,100"}
+**HANG DAYANG:**  
+“Loyalty is a virtue… but loyalty must stand on knowledge.”
+
+[[Next|PalaceSummons]]
+
+
+:: Choice2Truth {"position":"275,1075","size":"100,100"}
+**HANG DAYANG (approving):**  
+“Good. Truth is a lantern in dark times.”
+
+[[Next|PalaceSummons]]
+
+
+:: HangDayangIntro {"position":"525,325","size":"100,100"}
+**CHARACTERS**  
+**Hang Dayang**  
+Court scribe and your senior. Calm, precise, revered for her loyalty to the palace. She carries herself with the discipline of someone who has seen the weight of history.  
+
+**Dang Jelita**  
+Merchant’s wife. Sharp-tongued, observant, effortlessly diplomatic—every trader knows her. Represents the cosmopolitan pulse of the port community.
+
+**HANG DAYANG:**  
+“You must be the one summoned from the outer districts. I am Hang Dayang, court scribe to His Highness. Walk with me.”
+
+**P:**  
+“It’s an honour.”
+
+**HANG DAYANG:**  
+“The honour is in recording truth with clarity. Words survive longer than palaces.”
+
+[[Next|MarketStreets]]
+
+
+:: MarketStreets {"position":"525,450","size":"100,100"}
+[Scene: Melaka Market Streets — Bustling Evening]  
+The bazaar bustles—Persian rugs, Chinese celadon, cloth from India, spices from the archipelago.  
+Men carry keris at their waist; women wear baju kurung and songket, some with gold-threaded cuffs that sparkle in the sun.
+
+**HANG DAYANG:**  
+“You will write of this golden age, but remember… A golden age is not simply prosperity. It is discipline. It is protocol. Have you read the Sejarah Melayu?”
+
+**P:**  
+“I have.”
+
+**HANG DAYANG:**  
+“Then you know the rules—yellow garments are only for royalty. Gold-threaded fabrics forbidden to common folk unless permitted. Sumptuary laws guard order as surely as the city walls.”
+
+A voice calls out.  
+
+**DANG JELITA:**  
+“Dayang! You walk too fast for a scholar.”
+
+She approaches with a basket of pepper pods.  
+
+**DANG JELITA (to P):**  
+“You are new. I can always tell—the way you stare at everything as if it were precious. In Melaka, everything is precious. Even the arguments.”
+
+**P:**  
+“Arguments?”
+
+**DANG JELITA (laughing):**  
+“Eighty-four tongues, all arguing over pepper and porcelain. If the traders ever agreed on anything, the earth might split open.”
+
+What do you ask?  
+
+* [[“Is the city always this lively?”|Choice1Lively]]  
+* [[“How do you keep order among so many cultures?”|Choice1Order]]  
+* [[“What brings so many nations here?”|Choice1Nations]]
+
+
+:: PalaceCourtyard {"position":"275,1325","size":"100,100"}
+[Scene: Palace Courtyard — Late Night]  
+Lanterns glow softly. Envoys speak hurriedly with high-ranking officials.
+
+**DANG JELITA (arriving breathless):**  
+“The traders are uneasy. They say the Portuguese seek control of all spice routes. If they anchor here, they will demand tribute.”
+
+**HANG DAYANG:**  
+“And Melaka was never built to bow.”
+
+She turns to you.  
+
+**HANG DAYANG:**  
+“Come. The court requires observers. And scribes must see history with their own eyes.”
+
+[[ British Era|S3Start]]
+
+
+:: PalaceSummons {"position":"275,1200","size":"100,100"}
+A knock at the door interrupts.  
+
+**GUARD:**  
+“Hang Dayang, urgent summons. Foreign envoys seek audience. Whispers of Portuguese ships near the strait.”
+
+Hang Dayang stiffens slightly.  
+
+**HANG DAYANG:**  
+“It begins earlier than I feared.”
+
+**P:**  
+“What begins?”
+
+**HANG DAYANG:**  
+“Change. And change rarely arrives with gentle footsteps.”
+
+[[Next|PalaceCourtyard]]
+
+
+:: PauseByRiverside {"position":"400,700","size":"100,100"}
+A large Chinese treasure junk is moored downstream.
+
+**P:**  
+“That ship—its size is remarkable.”
+
+**DANG JELITA:**  
+“That is the legacy of Admiral Zheng He. His voyages protected Melaka from Siam long ago. Some say Melaka became a favored state because our Sultan knelt to no one but the truth.”
+
+**HANG DAYANG:**  
+“The Ming recognized Melaka as a vassal not out of weakness, but out of respect. Their envoys strengthened our legitimacy.”
+
+She watches the river a moment, thoughtful.
+
+[[Next|ScribesQuarters]]
+
+
+:: Riverbank {"position":"300,225","size":"100,100"}
+
+
+
+:: S2Start {"position":"550,200","size":"100,100"}
+[Scene: Melaka Riverbank — Late Afternoon]
+A warm haze settles over the water. Jong ships from Java, galleys from Gujarat, and Chinese treasure junks line the river. The air carries the scents of pepper, sandalwood, and drying fish.
+
+**PROTAGONIST (P)**  
+A newly appointed court scribe under the Sultan. Young, observant, carrying wax tablets and writing tools.  
+Goal: Chronicle Melaka’s events faithfully.  
+
+P (thinking):  
+“So this is Melaka… a city where eighty-four languages are said to mingle. A place the world flows through.”  
+
+A woman in elegant but practical attire—carrying scrolls and a keris she does not flaunt—approaches.
+
+[[Next|HangDayangIntro]]
+
+
+:: ScribesQuarters {"position":"400,825","size":"100,100"}
+[Scene: Court Scribes’ Quarters — Nightfall]  
+Hang Dayang leads you into a quiet wooden building. Oil lamps flicker. Manuscripts, quills, and inkstones fill the desks.
+
+**HANG DAYANG:**  
+“As a scribe, observe everything. Our duty is not to the moment, but to memory.”
+
+She hands you a blank scroll.  
+
+**HANG DAYANG:**  
+“Tell me—why did you join the court?”
+
+[[Choice|Choice2]]
