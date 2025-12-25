@@ -1,0 +1,23 @@
+body {
+    background-color: #000; /* Match this to your story's background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+tw-story {
+    /* Create the slide-up animation */
+    animation: slideInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    opacity: 0;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100vh); /* Start from the very bottom */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* End at the normal position */
+        opacity: 1;
+    }
+}
