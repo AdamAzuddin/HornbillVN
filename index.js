@@ -4,3 +4,147 @@ window.scrollTo(0, 0);
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const story = document.querySelector('tw-story');
+    if (!story) return;
+
+    // Watch for new passages being added to the story (handles navigation)
+    const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            for (const node of mutation.addedNodes) {
+                if (node.tagName && node.tagName.toLowerCase() === 'tw-passage') {
+                    applyTypewriter(node);
+                }
+            }
+        }
+    });
+
+    observer.observe(story, { childList: true });
+
+    // Handle the case where the passage is already present on load
+    const currentPassage = story.querySelector('tw-passage');
+    if (currentPassage) applyTypewriter(currentPassage);
+});
+
+function applyTypewriter(storyContainer) {
+    // Add the cursor class
+    storyContainer.classList.add('typing');
+    storyContainer.classList.remove('interactive');
+
+    // 1. Setup or clear the choice container
+    let choiceContainer = document.getElementById('choice-container');
+    if (!choiceContainer) {
+        choiceContainer = document.createElement('div');
+        choiceContainer.id = 'choice-container';
+        document.body.appendChild(choiceContainer);
+    }
+    choiceContainer.innerHTML = '';
+    choiceContainer.style.top = '';
+    choiceContainer.style.bottom = '';
+    choiceContainer.style.transform = '';
+
+    // 2. Handle choices: Create proxies in the center, keep originals hidden in place
+    const links = storyContainer.querySelectorAll('tw-link');
+    links.forEach(link => {
+        // Create a visual copy for the center container
+        const copy = document.createElement('tw-link');
+        copy.innerHTML = link.innerHTML;
+        copy.className = link.className;
+        
+        // When the copy is clicked, trigger the original link
+        copy.addEventListener('click', (e) => {
+            e.stopPropagation();
+            link.click();
+        });
+
+        choiceContainer.appendChild(copy);
+
+        // Hide the original link in place
+        link.classList.add('original-link-hidden');
+    });
+
+    const textNodes = [];
+    // Use a TreeWalker to find all text nodes while preserving HTML structure (b, i, links, etc.)
+    // Filter out text nodes that are inside tw-link elements
+    const walker = document.createTreeWalker(storyContainer, NodeFilter.SHOW_TEXT, {
+        acceptNode: (node) => {
+            let curr = node.parentNode;
+            while (curr && curr !== storyContainer) {
+                if (curr.tagName && curr.tagName.toLowerCase() === 'tw-link') {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                curr = curr.parentNode;
+            }
+            return NodeFilter.FILTER_ACCEPT;
+        }
+    }, false);
+    let node;
+
+    // Collect all text nodes and clear them initially
+    while (node = walker.nextNode()) {
+        if (node.textContent.trim().length > 0) {
+            textNodes.push({ node: node, text: node.textContent });
+            node.textContent = '';
+        }
+    }
+
+    let nodeIndex = 0;
+    let charIndex = 0;
+    const speed = 30; // Typing speed in milliseconds
+    let timeoutID;
+
+    function finishTyping() {
+        if (timeoutID) clearTimeout(timeoutID);
+        textNodes.forEach(t => t.node.textContent = t.text);
+        storyContainer.classList.remove('typing');
+        storyContainer.classList.add('interactive');
+        document.removeEventListener('click', clickHandler, { capture: true });
+
+        const storyRect = storyContainer.getBoundingClientRect();
+        const choiceRect = choiceContainer.getBoundingClientRect();
+
+        if (choiceRect.bottom > storyRect.top) {
+            choiceContainer.style.top = 'auto';
+            choiceContainer.style.bottom = (window.innerHeight - storyRect.top + 20) + 'px';
+            choiceContainer.style.transform = 'translateX(-50%)';
+        }
+
+        // Reveal the choices
+        const movedLinks = choiceContainer.querySelectorAll('tw-link');
+        movedLinks.forEach(link => {
+            link.style.opacity = '1';
+            link.style.pointerEvents = 'auto';
+        });
+    }
+
+    function clickHandler(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        finishTyping();
+    }
+
+    document.addEventListener('click', clickHandler, { capture: true });
+
+    function typeChar() {
+        if (nodeIndex >= textNodes.length) {
+            finishTyping();
+            return;
+        }
+
+        const current = textNodes[nodeIndex];
+        current.node.textContent += current.text.charAt(charIndex);
+        charIndex++;
+
+        if (charIndex < current.text.length) {
+            timeoutID = setTimeout(typeChar, speed);
+        } else {
+            nodeIndex++;
+            charIndex = 0;
+            timeoutID = setTimeout(typeChar, speed);
+        }
+    }
+
+    // Start typing
+    typeChar();
+}
