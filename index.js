@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function applyTypewriter(storyContainer) {
     // Add the cursor class
     storyContainer.classList.add('typing');
+    storyContainer.classList.remove('interactive');
 
     const textNodes = [];
     // Use a TreeWalker to find all text nodes while preserving HTML structure (b, i, links, etc.)
@@ -51,6 +52,7 @@ function applyTypewriter(storyContainer) {
     function typeChar() {
         if (nodeIndex >= textNodes.length) {
             storyContainer.classList.remove('typing'); // Remove cursor when done
+            storyContainer.classList.add('interactive'); // Show click indicator
             return;
         }
 

@@ -34,3 +34,12 @@ tw-passage.typing::after {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+/* Indicator to click to continue */
+tw-passage.interactive::after {
+    content: '▼';
+    display: block;
+    text-align: center;
+    animation: blink 1s step-end infinite;
+    margin-top: 1em;
+}
