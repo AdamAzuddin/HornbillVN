@@ -48,11 +48,27 @@ function applyTypewriter(storyContainer) {
     let nodeIndex = 0;
     let charIndex = 0;
     const speed = 30; // Typing speed in milliseconds
+    let timeoutID;
+
+    function finishTyping() {
+        if (timeoutID) clearTimeout(timeoutID);
+        textNodes.forEach(t => t.node.textContent = t.text);
+        storyContainer.classList.remove('typing');
+        storyContainer.classList.add('interactive');
+        document.removeEventListener('click', clickHandler, { capture: true });
+    }
+
+    function clickHandler(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        finishTyping();
+    }
+
+    document.addEventListener('click', clickHandler, { capture: true });
 
     function typeChar() {
         if (nodeIndex >= textNodes.length) {
-            storyContainer.classList.remove('typing'); // Remove cursor when done
-            storyContainer.classList.add('interactive'); // Show click indicator
+            finishTyping();
             return;
         }
 
@@ -60,8 +76,13 @@ function applyTypewriter(storyContainer) {
         current.node.textContent += current.text.charAt(charIndex);
         charIndex++;
 
-        if (charIndex < current.text.length) setTimeout(typeChar, speed);
-        else { nodeIndex++; charIndex = 0; setTimeout(typeChar, speed); }
+        if (charIndex < current.text.length) {
+            timeoutID = setTimeout(typeChar, speed);
+        } else {
+            nodeIndex++;
+            charIndex = 0;
+            timeoutID = setTimeout(typeChar, speed);
+        }
     }
 
     // Start typing

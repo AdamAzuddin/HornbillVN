@@ -22,6 +22,10 @@ tw-story {
     }
 }
 
+tw-passage.typing {
+    cursor: pointer;
+}
+
 /* Typewriter cursor effect */
 tw-passage.typing::after {
     content: '▋'; /* Cursor character */
