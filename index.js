@@ -32,9 +32,50 @@ function applyTypewriter(storyContainer) {
     storyContainer.classList.add('typing');
     storyContainer.classList.remove('interactive');
 
+    // 1. Setup or clear the choice container
+    let choiceContainer = document.getElementById('choice-container');
+    if (!choiceContainer) {
+        choiceContainer = document.createElement('div');
+        choiceContainer.id = 'choice-container';
+        document.body.appendChild(choiceContainer);
+    }
+    choiceContainer.innerHTML = '';
+
+    // 2. Handle choices: Create proxies in the center, keep originals hidden in place
+    const links = storyContainer.querySelectorAll('tw-link');
+    links.forEach(link => {
+        // Create a visual copy for the center container
+        const copy = document.createElement('tw-link');
+        copy.innerHTML = link.innerHTML;
+        copy.className = link.className;
+        
+        // When the copy is clicked, trigger the original link
+        copy.addEventListener('click', (e) => {
+            e.stopPropagation();
+            link.click();
+        });
+
+        choiceContainer.appendChild(copy);
+
+        // Hide the original link in place
+        link.classList.add('original-link-hidden');
+    });
+
     const textNodes = [];
     // Use a TreeWalker to find all text nodes while preserving HTML structure (b, i, links, etc.)
-    const walker = document.createTreeWalker(storyContainer, NodeFilter.SHOW_TEXT, null, false);
+    // Filter out text nodes that are inside tw-link elements
+    const walker = document.createTreeWalker(storyContainer, NodeFilter.SHOW_TEXT, {
+        acceptNode: (node) => {
+            let curr = node.parentNode;
+            while (curr && curr !== storyContainer) {
+                if (curr.tagName && curr.tagName.toLowerCase() === 'tw-link') {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                curr = curr.parentNode;
+            }
+            return NodeFilter.FILTER_ACCEPT;
+        }
+    }, false);
     let node;
 
     // Collect all text nodes and clear them initially
@@ -56,6 +97,13 @@ function applyTypewriter(storyContainer) {
         storyContainer.classList.remove('typing');
         storyContainer.classList.add('interactive');
         document.removeEventListener('click', clickHandler, { capture: true });
+
+        // Reveal the choices
+        const movedLinks = choiceContainer.querySelectorAll('tw-link');
+        movedLinks.forEach(link => {
+            link.style.opacity = '1';
+            link.style.pointerEvents = 'auto';
+        });
     }
 
     function clickHandler(e) {

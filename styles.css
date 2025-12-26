@@ -60,3 +60,60 @@ tw-passage.interactive::after {
     text-shadow: 0 0 4px #FFD700, 0 0 8px #FFD700;
 }
 */
+
+/* --- Layout: Dialogue Box & Centered Choices --- */
+
+tw-passage {
+    /* Position the text at the bottom like a dialogue box */
+    position: fixed !important;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    min-height: 150px;
+}
+
+#choice-container {
+    /* Center the choices in the middle of the screen */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 100;
+    pointer-events: none; /* Allow clicks to pass through the container area */
+}
+
+#choice-container tw-link {
+    pointer-events: auto; /* Re-enable clicks on the links themselves */
+    font-size: 1.5em;
+    color: #FFD700;
+    text-decoration: none;
+    border: 1px solid #FFD700;
+    padding: 10px 30px;
+    background: #000;
+    transition: all 0.3s ease;
+    opacity: 0; /* Hidden until typing finishes */
+}
+
+#choice-container tw-link:hover {
+    background: #FFD700;
+    color: #000;
+}
+
+/* Hide original links in place, keeping them functional for proxy clicks */
+tw-link.original-link-hidden {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
