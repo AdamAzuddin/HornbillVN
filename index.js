@@ -37,8 +37,8 @@ function applyTypewriter(storyContainer) {
     if (!choiceContainer) {
         choiceContainer = document.createElement('div');
         choiceContainer.id = 'choice-container';
-        document.body.appendChild(choiceContainer);
     }
+    storyContainer.parentNode.insertBefore(choiceContainer, storyContainer);
     choiceContainer.innerHTML = '';
     choiceContainer.style.top = '';
     choiceContainer.style.bottom = '';
@@ -100,15 +100,6 @@ function applyTypewriter(storyContainer) {
         storyContainer.classList.remove('typing');
         storyContainer.classList.add('interactive');
         document.removeEventListener('click', clickHandler, { capture: true });
-
-        const storyRect = storyContainer.getBoundingClientRect();
-        const choiceRect = choiceContainer.getBoundingClientRect();
-
-        if (choiceRect.bottom > storyRect.top) {
-            choiceContainer.style.top = 'auto';
-            choiceContainer.style.bottom = (window.innerHeight - storyRect.top + 20) + 'px';
-            choiceContainer.style.transform = 'translateX(-50%)';
-        }
 
         // Reveal the choices
         const movedLinks = choiceContainer.querySelectorAll('tw-link');

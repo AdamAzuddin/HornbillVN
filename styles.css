@@ -9,6 +9,14 @@ tw-story {
     /* Create the slide-up animation */
     animation: slideInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
+    pointer-events: none;
 }
 
 @keyframes slideInUp {
@@ -65,10 +73,8 @@ tw-passage.interactive::after {
 
 tw-passage {
     /* Position the text at the bottom like a dialogue box */
-    position: fixed !important;
-    bottom: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static !important;
+    transform: none !important;
     width: 90%;
     max-width: 800px;
     background-color: rgba(0, 0, 0, 0.85);
@@ -79,20 +85,23 @@ tw-passage {
     min-height: 150px;
     max-height: 60vh;
     overflow-y: auto;
+    pointer-events: auto;
 }
 
 #choice-container {
     /* Center the choices in the middle of the screen */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     z-index: 100;
     pointer-events: none; /* Allow clicks to pass through the container area */
+    /* Ensure choices don't grow indefinitely */
+    max-height: 50vh;
+    overflow-y: auto;
+    width: 90%;
+    margin-bottom: 20px;
 }
 
 #choice-container tw-link {
@@ -118,4 +127,29 @@ tw-link.original-link-hidden {
     opacity: 0;
     pointer-events: none;
     z-index: -1;
+}
+
+/* --- Mobile Responsiveness --- */
+@media screen and (max-width: 768px) {
+    tw-passage {
+        width: 90%;
+        bottom: 2vh;
+        max-height: 45vh; /* Limit height to leave room for choices */
+        padding: 15px;
+        font-size: 0.8em !important;
+    }
+
+    #choice-container {
+        width: 85%;
+        gap: 0.5rem;
+        max-height: 40vh; /* Smaller max-height on mobile */
+    }
+
+    #choice-container tw-link {
+        width: 100%; /* Full width buttons for easier tapping */
+        box-sizing: border-box;
+        text-align: center;
+        padding: 12px;
+        font-size: 1em !important;
+    }
 }
