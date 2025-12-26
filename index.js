@@ -40,6 +40,9 @@ function applyTypewriter(storyContainer) {
         document.body.appendChild(choiceContainer);
     }
     choiceContainer.innerHTML = '';
+    choiceContainer.style.top = '';
+    choiceContainer.style.bottom = '';
+    choiceContainer.style.transform = '';
 
     // 2. Handle choices: Create proxies in the center, keep originals hidden in place
     const links = storyContainer.querySelectorAll('tw-link');
@@ -97,6 +100,15 @@ function applyTypewriter(storyContainer) {
         storyContainer.classList.remove('typing');
         storyContainer.classList.add('interactive');
         document.removeEventListener('click', clickHandler, { capture: true });
+
+        const storyRect = storyContainer.getBoundingClientRect();
+        const choiceRect = choiceContainer.getBoundingClientRect();
+
+        if (choiceRect.bottom > storyRect.top) {
+            choiceContainer.style.top = 'auto';
+            choiceContainer.style.bottom = (window.innerHeight - storyRect.top + 20) + 'px';
+            choiceContainer.style.transform = 'translateX(-50%)';
+        }
 
         // Reveal the choices
         const movedLinks = choiceContainer.querySelectorAll('tw-link');
