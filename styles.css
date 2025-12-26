@@ -47,3 +47,16 @@ tw-passage.interactive::after {
     animation: blink 1s step-end infinite;
     margin-top: 1em;
 }
+
+.narrator {
+    color: #FFD700; /* A golden color */
+}
+
+/* --- Alternative Style: Golden Glow --- */
+/* Uncomment the block below to use a glow effect instead of a solid color. */
+/*
+.narrator {
+    color: white;
+    text-shadow: 0 0 4px #FFD700, 0 0 8px #FFD700;
+}
+*/
