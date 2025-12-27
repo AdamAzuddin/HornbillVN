@@ -107,6 +107,46 @@ function applyTypewriter(storyContainer) {
             link.style.opacity = '1';
             link.style.pointerEvents = 'auto';
         });
+
+        // Inject the interactive arrow inline with the last text node
+        const arrow = document.createElement('span');
+        arrow.textContent = '▼';
+        arrow.className = 'interactive-arrow';
+        
+        if (textNodes.length > 0) {
+            const lastTextNode = textNodes[textNodes.length - 1].node;
+            // Insert directly after the text node (inside its parent)
+            if (lastTextNode.parentNode) {
+                lastTextNode.parentNode.insertBefore(arrow, lastTextNode.nextSibling);
+            }
+        } else {
+            storyContainer.appendChild(arrow);
+        }
+
+        // 1. Traverse up from the arrow to remove margins from all parent blocks
+        let current = arrow.parentNode;
+        while (current && current !== storyContainer) {
+            current.style.marginBottom = '0';
+            current.style.paddingBottom = '0';
+            current = current.parentNode;
+        }
+
+        // 2. Hide EVERYTHING that follows the arrow's container in the passage
+        // Find the direct child of storyContainer that contains the arrow
+        let rootBlock = arrow;
+        while (rootBlock.parentNode && rootBlock.parentNode !== storyContainer) {
+            rootBlock = rootBlock.parentNode;
+        }
+
+        let nextSibling = rootBlock.nextSibling;
+        while (nextSibling) {
+            if (nextSibling.nodeType === 1) { // Element node
+                nextSibling.style.display = 'none';
+            } else if (nextSibling.nodeType === 3) { // Text node
+                nextSibling.textContent = '';
+            }
+            nextSibling = nextSibling.nextSibling;
+        }
     }
 
     function clickHandler(e) {

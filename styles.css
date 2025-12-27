@@ -48,12 +48,11 @@ tw-passage.typing::after {
 }
 
 /* Indicator to click to continue */
-tw-passage.interactive::after {
-    content: '▼';
-    display: block;
-    text-align: center;
+/* Injected via JS to sit inline with text */
+.interactive-arrow {
+    display: inline-block;
     animation: blink 1s step-end infinite;
-    margin-top: 1em;
+    margin-left: 5px;
 }
 
 .narrator {
@@ -79,10 +78,9 @@ tw-passage {
     max-width: 800px;
     background-color: rgba(0, 0, 0, 0.85);
     border: 1px solid #333;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    min-height: 150px;
     max-height: 60vh;
     overflow-y: auto;
     pointer-events: auto;
@@ -106,7 +104,7 @@ tw-passage {
 
 #choice-container tw-link {
     pointer-events: auto; /* Re-enable clicks on the links themselves */
-    font-size: 1.5em;
+    font-size: 1em;
     color: #FFD700;
     text-decoration: none;
     border: 1px solid #FFD700;
@@ -131,25 +129,46 @@ tw-link.original-link-hidden {
 
 /* --- Mobile Responsiveness --- */
 @media screen and (max-width: 768px) {
+
+    body{
+        transform: rotate(90deg);
+        transform-origin: center;
+        width: 100vh;
+        height: 100vw;
+        overflow: hidden;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -50vh;
+        margin-top: -50vw;
+    }
+    tw-story {
+        height: 100%;
+    }
     tw-passage {
-        width: 90%;
-        bottom: 2vh;
-        max-height: 45vh; /* Limit height to leave room for choices */
-        padding: 15px;
+        width: 98%;
+        bottom: 1vh;
+        min-height: 10vh;
+        max-height: 10vh;
         font-size: 0.8em !important;
     }
 
+    tw-icon {
+        margin: 0;
+        font-size: 40px;
+    }
+
     #choice-container {
-        width: 85%;
-        gap: 0.5rem;
-        max-height: 40vh; /* Smaller max-height on mobile */
+        width: 65%;
+        gap: 0.1rem;
+        max-height: 15vh; /* Smaller max-height on mobile */
     }
 
     #choice-container tw-link {
         width: 100%; /* Full width buttons for easier tapping */
         box-sizing: border-box;
         text-align: center;
-        padding: 12px;
-        font-size: 1em !important;
+        padding: 2px;
+        font-size: 0.8em !important;
     }
 }
