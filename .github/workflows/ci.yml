@@ -1,0 +1,34 @@
+name: CI Check
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 1. Check for HTML syntax errors
+      - name: HTMLHint
+        run: |
+          npx htmlhint "**/*.html"
+
+      # 2. Check for CSS errors (Optional)
+      - name: Stylelint
+        run: |
+          npx stylelint "**/*.css" || echo "No CSS linter config found, skipping."
+
+      # 3. Simple JS Syntax Check
+      - name: Check JS Syntax
+        run: |
+          # This finds all JS files and checks for basic syntax errors
+          find . -name "*.js" -not -path "./node_modules/*" | xargs -I {} node --check {}
+
+      - name: Check for broken links
+        uses: lycheeverse/lychee-action@v1.9.0
+        with:
+          args: --verbose --no-progress "**/*.html"
+
+    
