@@ -1,0 +1,29 @@
+:: StoryTitle
+Part_0_Intro
+
+
+:: StoryData
+{
+  "ifid": "451DB11A-EC3D-4DC3-9D95-95D4913B6E90",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: \ Chapter 1 {"position":"900,525","size":"100,100"}
+Then I fall with the dawn…
+…into the valley where stone remembers every footstep.
+
+
+:: Start {"position":"900,400","size":"100,100"}
+I drift between ages.
+The wind shifts. The soil remembers.
+Where the first fire was lit, I shall descend again.
+
+To begin my journey, I must choose a form.
+
+[[Become the Hornbill again. -> Chapter 1]]
+[[Take the shape of a whisper in the forest.-> Chapter 1]]
+[[Follow the scent of the ancestor’s breath.-> Chapter 1]]

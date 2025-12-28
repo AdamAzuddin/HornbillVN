@@ -1,5 +1,5 @@
 :: StoryTitle
-PART IV — MODERN ERA 
+Part_4_The_Modern_Era
 
 
 :: StoryData
@@ -7,7 +7,7 @@ PART IV — MODERN ERA
   "ifid": "397A29F2-2269-4577-9F89-04E5E4474F33",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "Start",
+  "start": "S4_Start",
   "zoom": 0.6
 }
 
@@ -16,7 +16,7 @@ PART IV — MODERN ERA
 ''MEENA:''
  “Then let’s build places where people meet, not hide.”
 
-(live: 2s)[
+(click: ?page)[
 (go-to: "Open House")
 ]
 
@@ -24,7 +24,7 @@ PART IV — MODERN ERA
 :: \ Outcome 2 {"position":"875,225","size":"100,100"}
  She watches him longer than necessary — a recognition she cannot name.
 
-(live: 2s)[
+(click: ?page)[
 (go-to: "KLCC Rises")
 ]
 
@@ -34,7 +34,7 @@ PART IV — MODERN ERA
  “Some stories… never end.”
  
  
- (live: 2s)[
+ (click: ?page)[
  (go-to:"The Storm of Reformasi")
  ]
 
@@ -43,7 +43,7 @@ PART IV — MODERN ERA
  ''RAHMANAH:''
  “Whatever happens… this country must stay whole.”
 
-(live: 2s)[
+(click: ?page)[
 (go-to: "2000s to 2020 Pandemic ")
 ]
 
@@ -51,7 +51,7 @@ PART IV — MODERN ERA
 :: \ Outcome 5 {"position":"1825,200","size":"100,100"}
 She steps onto her balcony, watching the quiet city breathe.
 
-(live: 2s)[
+(click: ?page)[
 (go-to: "Final Reflection")
 ]
 
@@ -144,7 +144,7 @@ AMEEN closes his eyes.
  
 A gust of wind lifts — forming a luminous silhouette of a hornbill.
 
-(live:5s)[
+(click: ?page)[
 (go-to: "Final")
 ])
  
@@ -221,7 +221,7 @@ Even in this body, I feel the shadows of old wings.
 
 
 
-:: Start {"position":"250,225","size":"100,100"}
+:: S4_Start {"position":"250,225","size":"100,100"}
 [Ambient: distant cheers, roosters, rustling flags]
 
 I have watched kingdoms rise, rivers shift, and empires waver.

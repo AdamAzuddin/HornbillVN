@@ -1,5 +1,5 @@
 :: StoryTitle
-PART III — BRITISH ERA
+Part_3_The_British_Era
 
 
 :: StoryData
@@ -7,7 +7,7 @@ PART III — BRITISH ERA
   "ifid": "B0390F2C-540C-4BEA-AA7C-C50B09438A07",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "Scene0_Dusk_Riverbank",
+  "start": "S3_Start",
   "zoom": 1
 }
 
@@ -23,7 +23,6 @@ Mr. Reid softens slightly.
 “Good. Results are what matter.”
 
 [[→ Continue|Scene2AfterReid]]
-
 
 
 :: ChoiceLand {"position":"1400,100","size":"100,100"}
@@ -43,16 +42,13 @@ Mr. Reid narrows his eyes.
 [[→ Continue|Scene6FinalFireworks]]
 
 
-
 :: ChoiceSilent {"position":"1400,500","size":"100,100"}
-
 Che Azizah remains silent.
 
 **MR. REID:**  
 “Hm. Silent respect. I approve.”
 
 [[→ Continue|Scene2AfterReid]]
-
 
 
 :: ChoiceUnityBegin {"position":"3100,525","size":"100,100"}
@@ -62,7 +58,6 @@ Che Azizah remains silent.
 [[→ Continue|Scene6FinalFireworks]]
 
 
-
 :: ChoiceWriteStory {"position":"2925,525","size":"100,100"}
 **CHE AZIZAH:**  
 “We are finally writing our own story.”
@@ -70,23 +65,7 @@ Che Azizah remains silent.
 [[→ Continue|Scene6FinalFireworks]]
 
 
-
-:: Scene 1 — Arrival {"position":"650,250","size":"100,100"}
-Che Azizah steps down carrying a bundle of schoolbooks.
-
-CHE AZIZAH: “Ameen? Are you ready? The children are waiting.”
-AMEEN closes the notebook.
-
-AMEEN: “Always, Cikgu. Education cannot wait, even if the roads do.”
-He tries to smile, but something in his eyes looks older than he is.
-
-THE HORNBILL (Narration): “She walks with purpose. He walks with memory.”
- 
- [[→ Walk toward the village|Scene1Path]]
-
-
-
-:: Scene0_Dusk_Riverbank {"position":"475,250","size":"100,100"}
+:: S3_Start {"position":"475,250","size":"100,100"}
 [Scene 0 — Dusk / Klang Riverbank, 1923]
 
 Ambient: cicadas, riverboats, distant tin mine clatter_
@@ -108,6 +87,19 @@ A carriage approaches.
 [[Continue →|Scene 1 — Arrival]]
 
 
+:: Scene 1 — Arrival {"position":"650,250","size":"100,100"}
+Che Azizah steps down carrying a bundle of schoolbooks.
+
+CHE AZIZAH: “Ameen? Are you ready? The children are waiting.”
+AMEEN closes the notebook.
+
+AMEEN: “Always, Cikgu. Education cannot wait, even if the roads do.”
+He tries to smile, but something in his eyes looks older than he is.
+
+THE HORNBILL (Narration): “She walks with purpose. He walks with memory.”
+ 
+ [[→ Walk toward the village|Scene1Path]]
+
 
 :: Scene1Path {"position":"800,250","size":"100,100"}
 They walk along the dirt path. Rubber trees line the horizon. Indian estate workers tap trees rhythmically. Chinese miners push carts of tin ore. Malay fishermen mend nets at the river’s edge.
@@ -125,8 +117,6 @@ Che Azizah pauses, studying him.
 CHE AZIZAH: “Sometimes you speak like someone far older.”
 
 [[→ Enter the village school|Scene2Schoolhouse]]
-
-
 
 
 :: Scene2AfterReid {"position":"1675,300","size":"100,100"}
@@ -157,7 +147,6 @@ fear is always the first chain.”
 [[→ Next|Scene3JapaneseOccupation]]
 
 
-
 :: Scene2Choice {"position":"1150,250","size":"100,100"}
 **How does Che Azizah respond?**
 
@@ -166,7 +155,6 @@ fear is always the first chain.”
 [[“We follow the curriculum, sir.”|ChoiceCurriculum]]
 
 [[Stay silent and observe him.|ChoiceSilent]]
-
 
 
 :: Scene2Schoolhouse {"position":"975,250","size":"100,100"}
@@ -226,8 +214,6 @@ Ameen watches silently, his fists tightening.
 [[→ Continue|Scene2Choice]]
 
 
-
-
 :: Scene3JapaneseOccupation {"position":"1900,300","size":"100,100"}
 [Scene 3 — Japanese Occupation, 1942]
 
@@ -261,7 +247,6 @@ Ameen — now older — looks toward the sky, unmoving.
 [[→ Continue|Scene3Trauma]]
 
 
-
 :: Scene3LiberationTransition {"position":"2300,300","size":"100,100"}
 [Scene Transition — Liberation, 1945]
 
@@ -276,7 +261,6 @@ Villagers watch with mixed emotions — relief and resentment.
 “But not as you left.”
 
 [[→ Continue|Scene4Aftermath]]
-
 
 
 :: Scene3Trauma {"position":"2100,300","size":"100,100"}
@@ -309,7 +293,6 @@ The officer hesitates.
 [[→ Continue|Scene3LiberationTransition]]
 
 
-
 :: Scene4Aftermath {"position":"2500,300","size":"100,100"}
 [Scene 4 — Aftermath & Rise of Nationalism]
 
@@ -335,8 +318,6 @@ And this nation needs people like you.”
 He meets her gaze—recognition flickering, ancient and deep.
 
 [[→ Continue|Scene4Meeting]]
-
-
 
 
 :: Scene4Meeting {"position":"2700,300","size":"100,100"}
@@ -382,10 +363,6 @@ MR. REID looks away.
 [[→ Continue|Scene5DeclarationApproaches]]
 
 
-
-
-
-
 :: Scene5Choice {"position":"3100,300","size":"100,100"}
 **What is Che Azizah’s final reflection before Merdeka?**
 
@@ -394,7 +371,6 @@ MR. REID looks away.
 [[“Let unity begin with us.”|ChoiceUnityBegin]]
 
 [[“This land remembers everyone who loved it.”|ChoiceLandRemembers]]
-
 
 
 :: Scene5DeclarationApproaches {"position":"2900,300","size":"100,100"}
@@ -439,7 +415,6 @@ Ameen looks up as a hornbill flies overhead.
 [[→ Reflect Che Azizah's thoughts|Scene5Choice]]
 
 
-
 :: Scene6FinalFireworks {"position":"3075,725","size":"100,100"}
 [Scene 6 — Midnight / Fireworks in the Distance]
 
@@ -459,6 +434,3 @@ Another begins.”
 “The river of time pulls me onward.  
 One more age awaits…  
 before I return to the sky.”
-
-→ END OF PART III — THE BRITISH ERA
-

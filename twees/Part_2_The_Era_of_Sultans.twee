@@ -1,5 +1,5 @@
 :: StoryTitle
-Part II- The era of Sultans
+Part_2_The_Era_of_Sultans
 
 
 :: StoryData
@@ -7,13 +7,9 @@ Part II- The era of Sultans
   "ifid": "92C62AE6-F10D-4BF1-8FCB-2AC01D62FE0D",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "Start",
+  "start": "S2_Start",
   "zoom": 1
 }
-
-
-:: Choice1 {"position":"525,700","size":"100,100"}
-
 
 
 :: Choice1Lively {"position":"400,575","size":"100,100"}
@@ -40,7 +36,7 @@ Part II- The era of Sultans
 [[Next|PauseByRiverside]]
 
 
-:: Choice2 {"position":"400,950","size":"100,100"}
+:: Choice2 {"position":"500,950","size":"100,100"}
 Why did you join?  
 
 * [[“To record the truth for future generations.”|Choice2Truth]]  
@@ -48,23 +44,21 @@ Why did you join?
 * [[“To witness the rise and fall of nations.”|Choice2Curiosity]]
 
 
-
-
-:: Choice2Curiosity {"position":"525,1075","size":"100,100"}
+:: Choice2Curiosity {"position":"750,1075","size":"100,100"}
 **HANG DAYANG (pauses):**  
 “A dangerous curiosity. But perhaps necessary. History does not wait for those who fear it.”
 
 [[Next|PalaceSummons]]
 
 
-:: Choice2Loyalty {"position":"400,1075","size":"100,100"}
+:: Choice2Loyalty {"position":"500,1075","size":"100,100"}
 **HANG DAYANG:**  
 “Loyalty is a virtue… but loyalty must stand on knowledge.”
 
 [[Next|PalaceSummons]]
 
 
-:: Choice2Truth {"position":"275,1075","size":"100,100"}
+:: Choice2Truth {"position":"325,1075","size":"100,100"}
 **HANG DAYANG (approving):**  
 “Good. Truth is a lantern in dark times.”
 
@@ -125,10 +119,10 @@ What do you ask?
 
 * [[“Is the city always this lively?”|Choice1Lively]]  
 * [[“How do you keep order among so many cultures?”|Choice1Order]]  
-* [[“What brings so many nations here?”|Choice1Nations]][[Choice1|Choice1]]
+* [[“What brings so many nations here?”|Choice1Nations]]
 
 
-:: PalaceCourtyard {"position":"275,1325","size":"100,100"}
+:: PalaceCourtyard {"position":"475,1350","size":"100,100"}
 [Scene: Palace Courtyard — Late Night]  
 Lanterns glow softly. Envoys speak hurriedly with high-ranking officials.
 
@@ -144,7 +138,8 @@ She turns to you.
 “Come. The court requires observers. And scribes must see history with their own eyes.”
 
 
-:: PalaceSummons {"position":"275,1200","size":"100,100"}
+
+:: PalaceSummons {"position":"475,1225","size":"100,100"}
 A knock at the door interrupts.  
 
 **GUARD:**  
@@ -164,7 +159,7 @@ Hang Dayang stiffens slightly.
 [[Next|PalaceCourtyard]]
 
 
-:: PauseByRiverside {"position":"400,700","size":"100,100"}
+:: PauseByRiverside {"position":"500,725","size":"100,100"}
 A large Chinese treasure junk is moored downstream.
 
 **P:**  
@@ -181,26 +176,7 @@ She watches the river a moment, thoughtful.
 [[Next|ScribesQuarters]]
 
 
-:: Riverbank {"position":"300,225","size":"100,100"}
-
-
-
-:: ScribesQuarters {"position":"400,825","size":"100,100"}
-[Scene: Court Scribes’ Quarters — Nightfall]  
-Hang Dayang leads you into a quiet wooden building. Oil lamps flicker. Manuscripts, quills, and inkstones fill the desks.
-
-**HANG DAYANG:**  
-“As a scribe, observe everything. Our duty is not to the moment, but to memory.”
-
-She hands you a blank scroll.  
-
-**HANG DAYANG:**  
-“Tell me—why did you join the court?”
-
-[[Choice|Choice2]]
-
-
-:: Start {"position":"550,200","size":"100,100"}
+:: S2_Start {"position":"550,200","size":"100,100"}
 [Scene: Melaka Riverbank — Late Afternoon]
 A warm haze settles over the water. Jong ships from Java, galleys from Gujarat, and Chinese treasure junks line the river. The air carries the scents of pepper, sandalwood, and drying fish.
 
@@ -214,3 +190,18 @@ P (thinking):
 A woman in elegant but practical attire—carrying scrolls and a keris she does not flaunt—approaches.
 
 [[Next|HangDayangIntro]]
+
+
+:: ScribesQuarters {"position":"500,825","size":"100,100"}
+[Scene: Court Scribes’ Quarters — Nightfall]  
+Hang Dayang leads you into a quiet wooden building. Oil lamps flicker. Manuscripts, quills, and inkstones fill the desks.
+
+**HANG DAYANG:**  
+“As a scribe, observe everything. Our duty is not to the moment, but to memory.”
+
+She hands you a blank scroll.  
+
+**HANG DAYANG:**  
+“Tell me—why did you join the court?”
+
+[[Choice|Choice2]]
