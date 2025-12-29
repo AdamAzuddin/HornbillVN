@@ -12,18 +12,137 @@ Part_0_Intro
 }
 
 
-:: \ Chapter 1 {"position":"900,525","size":"100,100"}
-Then I fall with the dawn…
+:: \ Outcome {"position":"2075,75","size":"100,100"}
+Then we fall with the dawn…
 …into the valley where stone remembers every footstep.
 
 
-:: Start {"position":"900,400","size":"100,100"}
-I drift between ages.
-The wind shifts. The soil remembers.
-Where the first fire was lit, I shall descend again.
 
-To begin my journey, I must choose a form.
+:: 1 {"position":"275,75","size":"100,100"}
+Not a god.
+ Not a man.
+ But a memory that moved with the wind.
+ 
+ (click: ?page)[
+(go-to: "2")
+]
 
-[[Become the Hornbill again. -> Chapter 1]]
-[[Take the shape of a whisper in the forest.-> Chapter 1]]
-[[Follow the scent of the ancestor’s breath.-> Chapter 1]]
+
+:: 10 {"position":"1500,75","size":"100,100"}
+History will unfold not as a lesson,
+ but as a living memory.
+ 
+   (click: ?page)[
+(go-to: "11")
+]
+
+
+:: 11 {"position":"1650,75","size":"100,100"}
+Listen closely.
+
+   (click: ?page)[
+(go-to: "12")
+]
+
+
+:: 12 {"position":"1800,75","size":"100,100"}
+The land remembers.
+ And now… so do you.
+ 
+    (click: ?page)[
+(go-to: "13")
+]
+
+
+:: 13 {"position":"1950,75","size":"100,100"}
+“To begin our  journey, we must take a form.”
+CHOICE:
+[[Become the Hornbill again.| Outcome]]
+[[Take the shape of a whisper in the forest.| Outcome]]
+[[Follow the scent of the ancestor’s breath. | Outcome]]
+
+
+
+:: 2 {"position":"425,75","size":"100,100"}
+It has worn many forms—
+ a bird upon the canopy,
+ a watcher in the crowd,
+ a voice carried through breath and bone.
+ 
+  (click: ?page)[
+(go-to: "3")
+]
+
+
+:: 3 {"position":"550,75","size":"100,100"}
+Across ages, it does not live lives of its own.
+ It passes through them.
+
+  (click: ?page)[
+(go-to: "4")
+]
+
+
+:: 4 {"position":"675,75","size":"100,100"}
+It does not choose their paths,
+ but it remembers their footsteps.
+ 
+   (click: ?page)[
+(go-to: "5")
+]
+
+
+:: 5 {"position":"825,75","size":"100,100"}
+As you walk through these eras,
+ you will not be one soul alone.
+ 
+    (click: ?page)[
+(go-to: "6")
+]
+
+
+:: 6 {"position":"950,75","size":"100,100"}
+You will inhabit lives —
+ feel their doubts, their courage, their grief —
+ while the ancient witness watches beside you,
+
+    (click: ?page)[
+(go-to: "7")
+]
+
+
+:: 7 {"position":"1075,75","size":"100,100"}
+ sometimes whispering,
+ sometimes silent.
+ 
+     (click: ?page)[
+(go-to: "8")
+]
+
+
+:: 8 {"position":"1200,75","size":"100,100"}
+You are not the Hornbill.
+ Yet the Hornbill walks with you.
+ 
+ (click: ?page)[
+(go-to: "9")
+]
+
+
+:: 9 {"position":"1350,75","size":"100,100"}
+You are not bound to one body,
+ but to a thread that runs through all of them.
+ 
+  (click: ?page)[
+(go-to: "10")
+]
+ 
+
+
+:: Start {"position":"150,75","size":"100,100"}
+Before time had names… before land learned its borders…
+There was a presence that watched.
+
+(click: ?page)[
+(go-to: "1")
+]
