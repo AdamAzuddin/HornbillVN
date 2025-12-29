@@ -12,187 +12,43 @@ Part_1_Prehistoric_Era
 }
 
 
-:: Appear briefly as a silhouette. {"position":"1450,250","size":"100,100"}
-''TRIBE MEMBER:''
-The watcher… the omen!
-
-''KALA:''
- It is a blessing. Do not fear.
- 
-(click: ?page)[
-(goto: "Bujang Valley")
-]
-
-
-:: Ask Sumana what becomes of this land. {"position":"1725,100","size":"100,100"}
-''RAJAH SUMAN:''
-This valley becomes part of a great tapestry.
- Trade routes. Temples.
- A people who bend metal to shape destiny.
- 
- (click: ?page)[
-(goto: "Ritual of Passing")
-]
-
-
-:: Ask about the cave rituals. {"position":"1100,400","size":"100,100"}
-''KALA:''
- We bury the body curled like the unborn.
- Birth and death must mirror. The circle must close.
- 
-     (click: ?page)[
-  (goto: "Nightfall, Firelight")
-]
-
-
-:: Ask about the ships he mentioned. {"position":"1725,250","size":"100,100"}
-''RAJAH SUMANA:''
-They come from lands called India and China.
- Bringing beads, silk, and stories.
- And they will seek ports where the river kisses the sea.
+:: 1 {"position":"250,150","size":"100,100"}
+KALA:
+ “His breath is shallow today… but the Semangat within him flickers still.”
  
   (click: ?page)[
-(goto: "Ritual of Passing")
+  (goto: "2")
 ]
 
 
-:: Ask about their beliefs. {"position":"1100,100","size":"100,100"}
-''THE HORNBILL:''
-What do you believe happens after death?
- 
-''KALA:''
- The Semangat walks. It searches for warmth and kin.
- If forgotten, it wanders without name
- 
-    (click: ?page)[
-  (goto: "Nightfall, Firelight")
-]
-
-
-:: Ask why he appeared tonight. {"position":"1725,400","size":"100,100"}
-''RAJAH SUMANA:''
-The spirits opened the path.
- I follow the call of one who watches all eras…
- you.
- 
-  (click: ?page)[
-(goto: "Ritual of Passing")
-]
-
-
-:: Bless the child silently. {"position":"1425,100","size":"100,100"}
-I brush the child’s cheek with a warm breeze.
-
-''CHILD:''
-Kala! Something touched me!
-
-(click: ?page)[
-(goto: "Bujang Valley")
-]
-
-
-:: Bujang Valley {"position":"1600,250","size":"100,100"}
-But the river of time does not stand still.
-A tremor runs through the night…
- 
-''KALA:''
-What is this? The sky cracks open?
-
-A presence enters — not of this tribe, not of this age.
-
-[Enter RAJAH SUMANA — regal figure, shimmering, symbol of earliest trading kingship.]
-
-''RAJAH SUMANA:''
-Spirit. Elder. Hear me.
-My time is far beyond yours, yet the river carries us together.
-
-''KALA:''
-Who stands before us? You walk like one born to command.
-
-[[Ask Sumana what becomes of this land.]]
-[[Ask about the ships he mentioned.]]
-[[Ask why he appeared tonight.]]
-
-
-
-:: Closing The PreHistoric Era {"position":"2200,275","size":"100,100"}
-''KALA:''
-Spirit… you have guided us.
- Where will you go now?
- 
-''THE HORNBILL:''
-The river pulls me forward.
- There are thrones to rise.
- Laws to be written.
- Sultans to be tested.
- 
-''RAJAH SUMANA (voice echoing):''
-And kingdoms to be born.
-
-(click: ?page)[
-(go-to: "Time Rift to Era of Sultans")
-]
-
-
-:: Guide his Semangat gently. {"position":"2025,125","size":"100,100"}
-I cradle his Semangat as it loosens from the body
-
-(click: ?page)[
-(goto: "Closing The PreHistoric Era")
-]
-
-
-:: Historical Insight {"position":"950,250","size":"100,100"}
-They carry him to caves for shelter.
-They bury their tools beside him.
-Already, belief grows:
-that Semangat follows the body into the next realm.
- 
- ''KALA:''
- We prepare the tools, the shells… he will not cross alone.
- 
-''YOUNG HUNTER:''
- Kala, why give him our finest? He cannot use them.
- 
-''KALA:''
- He will, in the land after this one.
- Leave no soul unarmed against the dark.
- 
-   [[Ask about their beliefs.]]
-   [[Observe silently.]]
-   [[Ask about the cave rituals.]]
-
-
-:: I watch over him, as you do. {"position":"675,325","size":"100,100"}
-''KALA:''
- The earth teaches compassion.
- A tribe that leaves one behind will soon lose all.
- 
-   (click: ?page)[
-  (goto: "Historical Insight")
-]
-
-
-:: Interaction with Kala {"position":"700,150","size":"100,100"}
-''KALA:''
- Spirit… I feel you watching.
- Why do you linger? Speak, if you will.
- 
- [[I watch over him, as you do.]]
- [[Why do you care for the weak?]]
- [[Remain silent.]]
-
-
-:: Nightfall, Firelight {"position":"1300,250","size":"100,100"}
-''CHILD:''
-Kala, tell us the story! The one of the first hornbill!
-
+:: 10 {"position":"2325,300","size":"100,100"}
 ''TRIBE MEMBERS:''
 Yes! The one who carried the Semangat between branches!
 
+    (click: ?page)[
+  (goto: "11")
+]
+
+
+:: 11 {"position":"2475,300","size":"100,100"}
  So they remember me…
  even before there were words carved in stone.
+ 
+     (click: ?page)[
+  (goto: "12")
+]
 
+
+:: 12 {"position":"2625,325","size":"100,100"}
+So they remember me…
+ even before there were words carved in stone
+ 
+     (click: ?page)[
+  (goto: "13")
+]
+
+
+:: 13 {"position":"2850,325","size":"100,100"}
 ''KALA:''
 It is said the first hornbill bore the wind’s breath.
 A watcher. A guide.
@@ -203,45 +59,147 @@ A watcher. A guide.
  [[Stir the fire as a sign.]]
 
 
-:: Observe silently. {"position":"1100,250","size":"100,100"}
-I remain the unseen witness.
-Their rituals speak enough
+:: 13.1 {"position":"3275,175","size":"100,100"}
+''CHILD:''
+Kala! Something touched me!
 
-    (click: ?page)[
-  (goto: "Nightfall, Firelight")
+(click: ?page)[
+(goto: "14")
 ]
 
 
-:: Remain distant, observing. {"position":"2025,275","size":"100,100"}
-I watch without touching.
- Semangat must learn to walk alone.
+:: 13.2 {"position":"3300,325","size":"100,100"}
+''KALA:''
+ It is a blessing. Do not fear.
+ 
+(click: ?page)[
+(goto: "14")
+]
+
+
+:: 14 {"position":"3450,325","size":"100,100"}
+But the river of time does not stand still.
+A tremor runs through the night…
+
+
+(click: ?page)[
+(goto: "15")
+]
+
+
+:: 15 {"position":"3600,350","size":"100,100"}
+''KALA:''
+What is this? The sky cracks open?
+
+(click: ?page)[
+(goto: "16")
+]
+
+
+:: 16 {"position":"3750,350","size":"100,100"}
+A presence enters — not of this tribe, not of this age.
+
+(click: ?page)[
+(goto: "17")
+]
+
+
+:: 17 {"position":"3900,375","size":"100,100"}
+''RAJAH SUMANA:''
+Spirit. Elder. Hear me.
+My time is far beyond yours, yet the river carries us together.
+
+(click: ?page)[
+(goto: "18")
+]
+
+
+:: 18 {"position":"4075,375","size":"100,100"}
+''KALA:''
+Who stands before us? You walk like one born to command.
+
+(click: ?page)[
+(goto: "19")
+]
+
+
+:: 19 {"position":"4225,375","size":"100,100"}
+''RAJAH SUMANA:''
+ I am Sumana, ruler of a valley where iron sings and ships bring gifts from distant storms.
+ A kingdom yet unborn in your time.
  
  (click: ?page)[
-(goto: "Closing The PreHistoric Era")
+(goto: "20")
 ]
 
 
-:: Remain silent. {"position":"550,325","size":"100,100"}
-''KALA:''
- Ah… the spirits speak even in silence.
+:: 2 {"position":"400,150","size":"100,100"}
+THE HORNBILL (Meta-Narration):
+ “He is frail, with a twisted arm and shortened fingers.
+ Yet they keep him alive. They protect him.”
  
-  (click: ?page)[
-  (goto: "Historical Insight")
+   (click: ?page)[
+  (goto: "3")
 ]
 
 
-:: Ritual of Passing {"position":"1875,250","size":"100,100"}
-[Days pass. Perak Man’s breath grows weaker.]
+:: 20 {"position":"4425,400","size":"100,100"}
+''THE HORNBILL:''
+ Why do you cross the ages?
+ 
+ (click: ?page)[
+(goto: "21")
+]
 
+
+:: 21 {"position":"4625,400","size":"100,100"}
+''RAJAH SUMANA:''
+ To warn the living: Your care for the weak shapes the kingdoms to come.
+ Those who honor Semangat will prosper.
+ 
+ (click: ?page)[
+(goto: "22")
+]
+
+
+:: 22 {"position":"4825,400","size":"100,100"}
+''KALA:''
+ Then we choose well… for we choose compassion.
+ 
+[[Ask Sumana what becomes of this land.]]
+[[Ask about the ships he mentioned.]]
+[[Ask why he appeared tonight.]]
+
+
+
+:: 23 {"position":"5150,375","size":"100,100"}
 The tribe gathers for the final rite.
 
+  (click: ?page)[
+(goto: "24")
+]
+
+
+:: 24 {"position":"5325,375","size":"100,100"}
 ''KALA:''
 Prepare the shells. The stone tool.
  Lay him curled like the child he once was.
  
+  (click: ?page)[
+(goto: "25")
+]
+
+
+:: 25 {"position":"5475,375","size":"100,100"}
 ''CHILD:''
 Kala… will he walk with the spirits now?
 
+  (click: ?page)[
+(goto: "26")
+]
+
+
+:: 26 {"position":"5625,375","size":"100,100"}
 ''KALA:''
 He will walk with peace.
  And he will be remembered.
@@ -251,55 +209,285 @@ He will walk with peace.
  [[Whisper a blessing.]]
 
 
-:: Start {"position":"500,150","size":"100,100"}
-Here, 11,000 years before the sultanates,
- a community tends to one they will one day call Perak Man.
+:: 27 {"position":"6050,400","size":"100,100"}
+''KALA:''
+Spirit… you have guided us.
+ Where will you go now?
  
-''Kala:''
-His breath is shallow today… but the Semangat within him flickers still.
 
-
-He is frail, with a twisted arm and shortened fingers.
- Yet they keep him alive. They protect him.
- 
- (click: ?page)[
-  (goto: "Interaction with Kala")
+  (click: ?page)[
+(goto: "28")
 ]
 
 
-:: Stir the fire as a sign. {"position":"1425,400","size":"100,100"}
+:: 28 {"position":"6200,400","size":"100,100"}
+''THE HORNBILL:''
+The river pulls me forward.
+ There are thrones to rise.
+ Laws to be written.
+ Sultans to be tested.
+ 
+   (click: ?page)[
+(goto: "29")
+]
+
+
+:: 29 {"position":"6375,400","size":"100,100"}
+''RAJAH SUMANA (voice echoing):''
+And kingdoms to be born.
+
+(click: ?page)[
+(go-to: "Time Rift to Era of Sultans")
+]
+
+
+:: 3 {"position":"550,150","size":"100,100"}
+''KALA:''
+ Spirit… I feel you watching.
+ Why do you linger? Speak, if you will.
+ 
+ [[I watch over him, as you do.]]
+ [[Why do you care for the weak?]]
+ [[Remain silent.]]
+
+
+:: 3.1 {"position":"875,50","size":"100,100"}
+''KALA:''
+ Then let us guard him together.
+ 
+   (click: ?page)[
+  (goto: "4")
+]
+
+
+:: 4 {"position":"950,250","size":"100,100"}
+They carry him to caves for shelter.
+They bury their tools beside him.
+
+   (click: ?page)[
+  (goto: "5")
+]
+
+ 
+
+ 
+
+
+
+:: 5 {"position":"1100,250","size":"100,100"}
+Already, belief grows:
+that Semangat follows the body into the next realm.
+
+  (click: ?page)[
+  (goto: "6")
+]
+
+
+:: 6 {"position":"1300,250","size":"100,100"}
+ ''KALA:''
+ We prepare the tools, the shells… he will not cross alone.
+ 
+   (click: ?page)[
+  (goto: "7")
+]
+
+
+:: 7 {"position":"1475,250","size":"100,100"}
+''YOUNG HUNTER:''
+ Kala, why give him our finest? He cannot use them.
+ 
+   (click: ?page)[
+  (goto: "8")
+]
+
+
+:: 8 {"position":"1650,275","size":"100,100"}
+''KALA:''
+ He will, in the land after this one.
+ Leave no soul unarmed against the dark.
+ 
+   [[Ask about their beliefs.]]
+   [[Observe silently.]]
+   [[Ask about the cave rituals.]]
+
+
+:: 8.1 {"position":"2050,125","size":"100,100"}
+''KALA:''
+ The Semangat walks. It searches for warmth and kin.
+ If forgotten, it wanders without name
+ 
+    (click: ?page)[
+  (goto: "9")
+]
+
+
+:: 9 {"position":"2175,300","size":"100,100"}
+''CHILD:''
+Kala, tell us the story! The one of the first hornbill!
+
+    (click: ?page)[
+  (goto: "10")
+]
+
+
+
+
+
+
+:: Appear briefly as a silhouette. {"position":"3125,325","size":"100,100"}
+''TRIBE MEMBER:''
+The watcher… the omen!
+
+(click: ?page)[
+(goto: "13.2")
+]
+
+
+
+:: Ask Sumana what becomes of this land. {"position":"5000,225","size":"100,100"}
+''RAJAH SUMAN:''
+This valley becomes part of a great tapestry.
+ Trade routes. Temples.
+ A people who bend metal to shape destiny.
+ 
+ (click: ?page)[
+(goto: "23")
+]
+
+
+:: Ask about the cave rituals. {"position":"1875,425","size":"100,100"}
+''KALA:''
+We bury the body curled like the unborn.
+ Birth and death must mirror. The circle must close.
+ 
+     (click: ?page)[
+  (goto: "9")
+]
+
+
+:: Ask about the ships he mentioned. {"position":"5000,375","size":"100,100"}
+''RAJAH SUMANA:''
+They come from lands called India and China.
+ Bringing beads, silk, and stories.
+ And they will seek ports where the river kisses the sea.
+ 
+  (click: ?page)[
+(goto: "23")
+]
+
+
+:: Ask about their beliefs. {"position":"1875,125","size":"100,100"}
+''THE HORNBILL:''
+What do you believe happens after death?
+ 
+    (click: ?page)[
+  (goto: "8.1")
+]
+
+
+:: Ask why he appeared tonight. {"position":"5000,525","size":"100,100"}
+''RAJAH SUMANA:''
+The spirits opened the path.
+ I follow the call of one who watches all eras…
+ you.
+ 
+  (click: ?page)[
+(goto: "23")
+]
+
+
+:: Bless the child silently. {"position":"3100,175","size":"100,100"}
+I brush the child’s cheek with a warm breeze.
+
+(click: ?page)[
+(goto: "13.1")
+]
+
+
+:: Guide his Semangat gently. {"position":"5875,250","size":"100,100"}
+I cradle his Semangat as it loosens from the body
+
+(click: ?page)[
+(goto: "27")
+]
+
+
+:: I watch over him, as you do. {"position":"750,250","size":"100,100"}
+''KALA:''
+ The earth teaches compassion.
+ A tribe that leaves one behind will soon lose all.
+ 
+   (click: ?page)[
+  (goto: "4")
+]
+
+
+:: Observe silently. {"position":"1875,275","size":"100,100"}
+ We remain the unseen witnesses.
+ Their rituals speak enough.
+ 
+    (click: ?page)[
+  (goto: "9")
+]
+
+
+:: Remain distant, observing. {"position":"5875,400","size":"100,100"}
+I watch without touching.
+ Semangat must learn to walk alone.
+ 
+ (click: ?page)[
+(goto: "27")
+]
+
+
+:: Remain silent. {"position":"750,425","size":"100,100"}
+''KALA:''
+ Ah… the spirits speak even in silence.
+ 
+  (click: ?page)[
+  (goto: "4")
+]
+
+
+:: Start {"position":"75,150","size":"100,100"}
+ Here, 11,000 years before the sultanates,
+ a community tends to one they will one day call Perak Man.
+ 
+ (click: ?page)[
+  (goto: "1")
+]
+
+
+:: Stir the fire as a sign. {"position":"3100,475","size":"100,100"}
 ''KALA:''
 The spirits approve of our keeping the weak safe.
 
 (click: ?page)[
-(goto: "Bujang Valley")
+(goto: "14")
 ]
 
 
-:: Time Rift to Era of Sultans {"position":"2325,275","size":"100,100"}
+:: Time Rift to Era of Sultans {"position":"6525,400","size":"100,100"}
 I leave the valley…
 …as the crescent moon of a new age rises.
 
 
 
-:: Whisper a blessing. {"position":"2025,400","size":"100,100"}
+:: Whisper a blessing. {"position":"5875,525","size":"100,100"}
 ''THE HORNBILL:''
 Go with light.
- Return with memory.
+Return with memory.
  
  (click: ?page)[
-(goto: "Closing The PreHistoric Era")
+(goto: "27")
 ]
 
 
-:: Why do you care for the weak? {"position":"825,325","size":"100,100"}
+:: Why do you care for the weak? {"position":"725,50","size":"100,100"}
 ''THE HORNBILL:''
  I watch, as I have watched many ages.
  His Semangat calls to me.
  
-''KALA:''
- Then let us guard him together.
- 
-   (click: ?page))[
-  (goto: "Historical Insight")
+   (click: ?page)[
+  (goto: "3.1")
 ]
