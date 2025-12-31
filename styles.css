@@ -6,9 +6,6 @@ body {
 }
 
 tw-story {
-    /* Create the slide-up animation */
-    animation: slideInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -17,6 +14,9 @@ tw-story {
     padding-bottom: 5vh;
     box-sizing: border-box;
     pointer-events: none;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 @keyframes slideInUp {
@@ -73,7 +73,6 @@ tw-passage.typing::after {
 tw-passage {
     /* Position the text at the bottom like a dialogue box */
     position: static !important;
-    transform: none !important;
     width: 90%;
     max-width: 800px;
     background-color: rgba(0, 0, 0, 0.85);
@@ -84,6 +83,11 @@ tw-passage {
     max-height: 60vh;
     overflow-y: auto;
     pointer-events: auto;
+
+    /* Create the slide-up animation */
+    animation: slideInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    opacity: 0;
+    transform: translateY(100vh); /* Start off-screen to match animation */
 }
 
 #choice-container {
