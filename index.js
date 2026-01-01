@@ -28,6 +28,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function applyTypewriter(storyContainer) {
+    // Cleanup unwanted <br> tags caused by newlines after scripts or sprites
+    storyContainer.querySelectorAll('br').forEach(br => {
+        let prev = br.previousSibling;
+        while (prev && prev.nodeType === 3 && prev.textContent.trim() === '') {
+            prev = prev.previousSibling;
+        }
+        if (prev && (prev.nodeName === 'SCRIPT' || (prev.nodeName === 'IMG' && prev.classList.contains('sprite')))) {
+            br.remove();
+        }
+    });
+
     // Add the cursor class
     storyContainer.classList.add('typing');
     storyContainer.classList.remove('interactive');
