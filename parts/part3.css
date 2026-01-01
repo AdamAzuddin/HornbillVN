@@ -1,0 +1,27 @@
+tw-story[tags~="scene0"]{
+    background-image: url("../assets/images/Background-Part3-Scene0-KlangRiver.png");
+}
+
+tw-story[tags~="scene1"]{
+    background-image: url("../assets/images/Background-Part3-Scene1-VillagePath.png");
+}
+
+tw-story[tags~="scene2"]{
+    background-image: url("../assets/images/Background-Part3-Scene2-School.png");
+}
+
+tw-story[tags~="scene3"]{
+    background-image: url("../assets/images/Background-Part3-Scene3-JapaneseOccupation.png");
+}
+
+tw-story[tags~="scene4"]{
+    background-image: url("../assets/images/Background-Part3-Scene4-Kopitiam.png");
+}
+
+tw-story[tags~="scene5"]{
+    background-image: url("../assets/images/Background-Part3-Scene5-MerdekaPrep.png");
+}
+
+tw-story[tags~="scene6"]{
+    background-image: url("../assets/images/Background-Part3-Scene6-Fireworks.png");
+}
