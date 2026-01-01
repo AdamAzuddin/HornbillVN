@@ -1,0 +1,27 @@
+tw-story[tags~="scene0"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-0.png");
+}
+
+tw-story[tags~="scene1"]{
+    background-image: url("../assets/images/BackGround-Part-4-Scene-1.png");
+}
+
+tw-story[tags~="scene2"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-2.png");
+}
+
+tw-story[tags~="scene3"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-3.png");
+}
+
+tw-story[tags~="scene4"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-4.png");
+}
+
+tw-story[tags~="scene5"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-5.png");
+}
+
+tw-story[tags~="scene6"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-6.png");
+}

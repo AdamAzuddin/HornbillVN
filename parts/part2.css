@@ -1,0 +1,19 @@
+tw-story[tags~="scene0"]{
+    background-image: url("../assets/images/Background-Part2-Scene0.png");
+}
+
+tw-story[tags~="scene1"]{
+    background-image: url("../assets/images/Background-Part2-Scene-1.png");
+}
+
+tw-story[tags~="scene2"]{
+    background-image: url("../assets/images/BackGround-Part-2-Scene-2.png");
+}
+
+tw-story[tags~="scene3"]{
+    background-image: url("../assets/images/BackGround-Part-2-Scene-3.png");
+}
+
+tw-story[tags~="scene4"]{
+    background-image: url("../assets/images/BackGround-Part-2-Scene-4.png");
+}
