@@ -17,3 +17,9 @@ tw-story[tags~="scene3"]{
 tw-story[tags~="scene4"]{
     background-image: url("../assets/images/BackGround-Part-2-Scene-4.png");
 }
+tw-story[tags~="scene5"]{
+    background-image: url("../assets/images/BackGround-Part-2-Scene-5.png");
+}
+tw-story[tags~="scene5a"]{
+    background-image: url("../assets/images/BackGround-Part-2-Scene-5.png");
+}
