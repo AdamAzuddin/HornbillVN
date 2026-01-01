@@ -39,6 +39,14 @@ function applyTypewriter(storyContainer) {
         }
     });
 
+    // Prepend any sprite if it exists in current passage
+    storyContainer.querySelectorAll('img.sprite').forEach(sprite => {
+        document.querySelector('tw-story').prepend(sprite);
+        setTimeout(() => {
+            sprite.classList.add('enter-left');
+        }, 50);
+    });
+
     // Add the cursor class
     storyContainer.classList.add('typing');
     storyContainer.classList.remove('interactive');
