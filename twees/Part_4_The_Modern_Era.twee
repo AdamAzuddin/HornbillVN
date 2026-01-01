@@ -12,43 +12,40 @@ Part_4_The_Modern_Era
 }
 
 
-:: \ Outcome {"position":"600,225","size":"100,100"}
-''MEENA:''
- “Then let’s build places where people meet, not hide.”
-
-(click: ?page)[
-(go-to: "Open House")
-]
-
-
-:: \ Outcome 2 {"position":"875,225","size":"100,100"}
- She watches him longer than necessary — a recognition she cannot name.
+:: \ Outcome 2 {"position":"1975,400","size":"100,100"}
+She watches him longer than necessary — a recognition she cannot name.
 
 (click: ?page)[
 (go-to: "KLCC Rises")
 ]
 
 
-:: \ Outcome 3 {"position":"1175,225","size":"100,100"}
- ''AMEEN (smiling knowingly):''
+
+
+:: \ Outcome 3 {"position":"3200,250","size":"100,100"}
+''AMEEN (smiling knowingly):''
  “Some stories… never end.”
  
  
  (click: ?page)[
  (go-to:"The Storm of Reformasi")
  ]
+ 
+ 
 
 
-:: \ Outcome 4 {"position":"1475,200","size":"100,100"}
- ''RAHMANAH:''
+:: \ Outcome 4 {"position":"4050,400","size":"100,100"}
+''RAHMANAH:''
  “Whatever happens… this country must stay whole.”
 
 (click: ?page)[
-(go-to: "2000s to 2020 Pandemic ")
+(go-to: "2000s to 2020 Pandemic")
 ]
 
 
-:: \ Outcome 5 {"position":"1825,200","size":"100,100"}
+
+
+:: \ Outcome 5 {"position":"5150,550","size":"100,100"}
 She steps onto her balcony, watching the quiet city breathe.
 
 (click: ?page)[
@@ -56,25 +53,245 @@ She steps onto her balcony, watching the quiet city breathe.
 ]
 
 
-:: 2000s to 2020 Pandemic\  {"position":"1650,200","size":"100,100"}
+
+
+:: 2000s to 2020 Pandemic {"position":"4175,400","size":"100,100"}
 [Montage — MRT construction, schools reopening, smartphone era, Bersih rallies, quiet pandemic streets.]
 
- I saw the digital age unfold like lightning.
- I saw demonstrations bloom like flowers.
- I saw silence return during the great illness of 2020…
- just as it did in other ages of fear.
+ (click: ?page)[
+(go-to: "Digital age")
+]
+
+
+
+
+:: Ameen 1 {"position":"1750,550","size":"100,100"}
+''AMEEN (soft, distant, smiling like someone who’s lived many lives):''
+ “Maybe food cannot solve everything…
+ But kindness can.”
  
-RAHMANAH watches news of the lockdown.
+ (click: ?page)[
+(go-to: "Old Body")
+]
 
-''MEENA (on speakerphone):''
- “Stay home, ya? We old people must be careful.”
 
-''RAHMANAH:''
- “Old? You? Never.”
 
+
+:: Ameen 2 {"position":"2600,400","size":"100,100"}
+AMEEN joins them, hands a stack of permits.
+
+(click: ?page)[
+(go-to: "Ameen 3")
+]
+
+
+
+
+
+:: Ameen 3 {"position":"2725,400","size":"100,100"}
+''AMEEN (quietly):''
+ “When this stands… children will look up and believe anything is possible.”
+ 
+ (click: ?page)[
+(go-to: "Rahmanah 3")
+]
+
+
+
+
+:: Ameen 4 {"position":"2975,400","size":"100,100"}
+''AMEEN:''
+ “I’ve seen enough centuries to know hope when I see it.”
+ 
+ (click: ?page)[
+(go-to: "She pauses")
+]
+
+
+
+
+:: Ameen 5 {"position":"5400,550","size":"100,100"}
+''AMEEN:''
+ “Rahmanah… do you ever wonder why you build?”
+ 
+   (click: ?page)[
+(go-to: "Rahmanah 5")
+]
+
+
+
+
+:: Ameen 6 {"position":"5775,550","size":"100,100"}
+''AMEEN:''
+ “And I must go.
+ My stories are finished… for now.”
+ 
+   (click: ?page)[
+(go-to: "Rahmanah 6")
+]
+
+
+
+
+:: Ameen Enters {"position":"1625,550","size":"100,100"}
+ AMEEN enters — older now, carrying files, wearing spectacles.
+ (He is the reincarnated Hornbill.)
+ 
+ (click: ?page)[
+(go-to: "Ameen 1")
+]
+
+
+
+
+:: Ameen appears {"position":"3700,250","size":"100,100"}
+AMEEN appears beside them, soaked by rain.
+
+ (click: ?page)[
+ (go-to:"Ameen looking at crowd")
+ ]
+ 
+ 
+
+
+:: Ameen calm {"position":"4925,400","size":"100,100"}
 ''AMEEN (now frail but calm):''
  “Even in isolation… unity is found in how we protect one another.”
+ 
+  (click: ?page)[
+(go-to: "He is remembering")
+]
 
+
+
+
+:: Ameen closes eyes {"position":"5650,550","size":"100,100"}
+AMEEN closes his eyes.
+
+  (click: ?page)[
+(go-to: "Ameen 6")
+]
+
+
+
+
+:: Ameen fades {"position":"6025,550","size":"100,100"}
+''AMEEN (fading, voice overlapping with Hornbill’s):''
+ “Back to the sky.
+ Back to memory.
+ 
+    (click: ?page)[
+(go-to: "Ameen fades 2")
+]
+
+
+
+
+:: Ameen fades 2 {"position":"6025,675","size":"100,100"}
+My work ends here…
+ Yours continues.”
+ 
+   (click: ?page)[
+(go-to: "Ameen gone")
+]
+
+
+
+
+:: Ameen gone {"position":"6150,550","size":"100,100"}
+A gust of wind lifts — forming a luminous silhouette of a hornbill.
+
+(click: ?page)[
+(go-to: "Final")
+]
+
+
+
+
+:: Ameen looking at crowd {"position":"3825,250","size":"100,100"}
+''AMEEN (looking at the crowds):''
+ “History repeats…
+ …but sometimes, it rises instead of falling.”
+ 
+  (click: ?page)[
+ (go-to:"Land has cried")
+ ]
+ 
+ 
+
+
+:: Crowd {"position":"425,250","size":"100,100"}
+The crowd erupts—
+ MERDEKA!
+ MERDEKA!
+ MERDEKA!
+ Seven times. Each one a heartbeat.
+ 
+   (click: ?page)[
+  (goto: "Interaction Meena 2")
+]
+
+
+
+
+:: Digital age {"position":"4300,400","size":"100,100"}
+I saw the digital age unfold like lightning.
+ I saw demonstrations bloom like flowers.
+ 
+ (click: ?page)[
+(go-to: "Great Illness")
+]
+
+
+
+
+:: Fear & Riots {"position":"1025,400","size":"100,100"}
+She remembers the riots.
+She remembers what fear does to a city.
+ 
+ 
+ [[A building must welcome everyone. ->Outcome]]
+ [[A building must heal old wounds. ->Outcome]]
+ [[A building must stand as long as hope stands. ->Outcome]]
+ 
+ 
+
+
+:: Final {"position":"6275,700","size":"100,100"}
+The first humans remembered me in caves.
+
+(click: ?page)[
+(go-to: "Melaka remembers")
+]
+
+
+
+
+:: Final Reflection {"position":"5275,550","size":"100,100"}
+[Ambient: sunrise, soft wind, far-off azan]
+
+AMEEN sits with Rahmanah on a rooftop overlooking KLCC.
+His breath is shallow — not dying, just fading into another cycle.
+
+  (click: ?page)[
+(go-to: "Ameen 5")
+]
+
+
+
+
+:: Great Illness {"position":"4425,400","size":"100,100"}
+I saw silence return during the great illness of 2020…
+ just as it did in other ages of fear.
+ 
+  (click: ?page)[
+(go-to: "Rahmanah watches news")
+]
+
+
+
+
+:: He is remembering {"position":"5050,400","size":"100,100"}
 He is remembering.
 I am remembering through him.
 Every life I have lived connects here.
@@ -87,209 +304,67 @@ Every life I have lived connects here.
 
 
 
-
-
-
-
-
-
-
-
-
-:: Final {"position":"2150,225","size":"100,100"}
-The first humans remembered me in caves.
- Melaka remembered me in firelight.
- A nation remembered me in its struggle.
- 
-Now… I return to the sky.
- My wings carry all your stories.
-This land endures.
- Its people endure.
- And as long as they remember…
- I will always return.
- 
+:: Hornbill ascends {"position":"6775,700","size":"100,100"}
 The hornbill ascends into the dawn above KLCC.
- The skyline glows.
- Malaysia breathes.
-
-
-:: Final Reflection {"position":"2000,225","size":"100,100"}
-[Ambient: sunrise, soft wind, far-off azan]
-
-AMEEN sits with Rahmanah on a rooftop overlooking KLCC.
-His breath is shallow — not dying, just fading into another cycle.
-
-''AMEEN:''
- “Rahmanah… do you ever wonder why you build?”
-
-''RAHMANAH (smiles softly):''
- “To leave something for the next generation.
- To say: we were here.
- We cared.”
- 
-AMEEN closes his eyes.
-
-''AMEEN:''
- “And I must go.
- My stories are finished… for now.”
-
-''RAHMANAH (shaken):''
- “Ameen? What do you mean? Go where?”
-
-''AMEEN (fading, voice overlapping with Hornbill’s):''
- “Back to the sky.
- Back to memory.
- My work ends here…
- Yours continues.”
- 
-A gust of wind lifts — forming a luminous silhouette of a hornbill.
 
 (click: ?page)[
-(go-to: "Final")
-])
+(go-to: "Malaysia breathes")
+]
+
+
+
+
+:: I shall return {"position":"6650,700","size":"100,100"}
+And as long as they remember…
+I will always return.
+
+(click: ?page)[
+(go-to: "Hornbill ascends")
+]
+
+
+
+
+:: Interaction Meena 1 {"position":"300,250","size":"100,100"}
  
+A small girl, RAHMANAH, holds her father’s hand amid the Merdeka crowds.
+
+''MEENA:''
+Rahmanah! Faster lah! Want to hear Tunku shout Merdeka or not?
+
+  (click: ?page)[
+  (goto: "Crowd")
+]
 
 
-:: KLCC Rises {"position":"1025,225","size":"100,100"}
+
+
+:: Interaction Meena 2 {"position":"550,250","size":"100,100"}
+Freedom… the word flies on the wind like a bird remembering its sky.
+
+''RAHMANAH:''
+One day… I will help build something beautiful for this country.
+
+   (click: ?page)[
+  (goto: "The Nation Builds")
+]
+
+
+
+
+:: KLCC Rises {"position":"2100,400","size":"100,100"}
 [Ambient: cranes, steel clangs, multilingual instructions shouted across scaffolding]
 
 KLCC foundation site.
 
-''RAHMANAH (studying blueprint):''
- “This tower… it must reflect us.
- All of us. Every race, every memory.”
- 
-''MEENA (yelling to workers):''
- “Angkat! Slowly—if jatuh, habis semua!”
-Workers laugh, sweating, joking across ethnic lines.
-
-I watched civilizations craft temples and palaces.
- But this…
- This is a dream of a people, not a king.
-
-AMEEN joins them, hands a stack of permits.
- 
-''AMEEN (quietly):''
- “When this stands… children will look up and believe anything is possible.”
-
-''RAHMANAH:''
- “Do you really think so?”
-
-''AMEEN:''
- “I’ve seen enough centuries to know hope when I see it.”
- 
-She pauses — not understanding why his words feel ancient.
-
-
-[[You speak like you’ve lived many lives. -> Outcome 3]]
-[[Hope… yes. That’s what we’re building. -> Outcome 3]]
-[[What makes you so certain?-> Outcome 3]]
+(click: ?page)[
+(go-to: "Rahmanah Studying Blueprints")
+]
 
 
 
 
-
-
-
-
-
-
-:: Open House {"position":"725,225","size":"100,100"}
-[Ambient: laughter, clatter of plates, kuih aromas]
-
-A Deepavali open house. Malay, Chinese, Indian families mingling easily.
- Children chase each other across the yard.
- 
-''MEENA (offering murukku):''
- “Eat lah. Unity begins in the stomach.”
-
-RAHMANAH smiles warmly.
-
-''RAHMANAH:''
- “If only all problems could be solved with kuih.”
-AMEEN enters — older now, carrying files, wearing spectacles.
- (He is the reincarnated Hornbill.)
- 
-''AMEEN (soft, distant, smiling like someone who’s lived many lives):''
- “Maybe food cannot solve everything…
- But kindness can.”
-
-Even in this body, I feel the shadows of old wings.
-
-[[He seems familiar… -> Outcome 2]]
-[[He speaks like an old soul. -> Outcome 2]]
-
-
-
-:: S4_Start {"position":"250,225","size":"100,100"}
-[Ambient: distant cheers, roosters, rustling flags]
-
-I have watched kingdoms rise, rivers shift, and empires waver.
- Now I return once more… not to jungles, but to a nation being born.
- 
- 
-A small girl, RAHMANAH, holds her father’s hand amid the Merdeka crowds.
- 
-''MEENA:''
-Rahmanah! Faster lah! Want to hear Tunku shout Merdeka or not?
-
-The crowd erupts—
- MERDEKA!
- MERDEKA!
- MERDEKA!
- Seven times. Each one a heartbeat.
-
-Freedom… the word flies on the wind like a bird remembering its sky.
-
-''RAHMANAH: :''
-One day… I will help build something beautiful for this country.
-
-[[The Nation Builds]] 
-
-
-:: The Nation Builds {"position":"450,250","size":"100,100"}
-[Ambient: construction tools, radio playing “Tanah Pusaka”]
-
-''RAHMANAH (now a young woman, an architect):''
-"The structure must hold. Not just technically… socially."
-
-''MEENA (now a civil engineer, half-joking):''
- "Wah, architect only talk about feelings nowadays?"
-
-''RAHMANAH (laughing softly):''
- "After 1969… how can I not?
- I saw streets burn. Neighbours hide. Tears fall.
- If we build without unity, everything collapses."
-
-She remembers the riots.
- She remembers what fear does to a city.
- 
- 
- [[A building must welcome everyone. -> Outcome]]
- [[A building must heal old wounds. -> Outcome]]
- [[A building must stand as long as hope stands. -> Outcome]]
-
-
-
-:: The Storm of Reformasi {"position":"1350,200","size":"100,100"}
-[Ambient: heavy rain, distant chants, police sirens, whispered fear]
-
-RAHMANAH and MEENA watch from a rooftop as crowds gather.
-Banners. Cries. Anguish. Determination.
-
-''MEENA:''
- “Kuala Lumpur hasn’t seen this kind of fire since… you know.”
-
-''RAHMANAH (firm):''
- “No more burning.
- We want change, not chaos.”
-
-AMEEN appears beside them, soaked by rain.
-
-''AMEEN (looking at the crowds):''
- “History repeats…
- …but sometimes, it rises instead of falling.”
-
+:: Land has cried {"position":"3950,250","size":"100,100"}
  “From occupation to riots to protest…
  This land has cried many times.
  But each tear waters the soil of tomorrow.
@@ -300,13 +375,328 @@ AMEEN appears beside them, soaked by rain.
  [[May this lead to something better. -> Outcome 4]]
  
  
+
+
+:: Malaysia breathes {"position":"6900,700","size":"100,100"}
+The skyline glows.
+Malaysia breathes.
+
+
+
+
+:: Meena 3 {"position":"775,400","size":"100,100"}
+''MEENA (now a civil engineer, half-joking):''
+ "Wah, architect only talk about feelings nowadays?"
+ 
+    (click: ?page)[
+  (goto: "Rahmanah 1")
+]
+
+
+
+
+:: Meena 4 {"position":"1375,550","size":"100,100"}
+''MEENA (offering murukku):''
+ “Eat lah. Unity begins in the stomach.”
+ 
+ (click: ?page)[
+(go-to: "Rahmanah 2")
+]
+
+
+
+
+:: Meena 5 {"position":"3450,250","size":"100,100"}
+''MEENA:''
+ “Kuala Lumpur hasn’t seen this kind of fire since… you know.”
+ 
+  (click: ?page)[
+ (go-to:"Rahmanah firm")
+ ]
  
  
+
+
+:: Meena speakerphone {"position":"4675,400","size":"100,100"}
+''MEENA (on speakerphone):''
+ “Stay home, ya? We old people must be careful.”
+ 
+  (click: ?page)[
+(go-to: "Rahmanah 4")
+]
+
+
+
+
+:: Meena yelling {"position":"2350,400","size":"100,100"}
+''MEENA (yelling to workers):''
+ “Angkat! Slowly—if jatuh, habis semua!”
+Workers laugh, sweating, joking across ethnic lines.
+
+(click: ?page)[
+(go-to: "Narration")
+]
+
+
+
+
+:: Melaka remembers {"position":"6275,825","size":"100,100"}
+Melaka remembered me in firelight.
+
+(click: ?page)[
+(go-to: "Nation remembers")
+]
+
+
+
+
+:: Narration {"position":"2475,400","size":"100,100"}
+I watched civilizations craft temples and palaces.
+ But this…
+ This is a dream of a people, not a king.
+ 
+ (click: ?page)[
+(go-to: "Ameen 2")
+]
+
+
+
+
+:: Nation remembers {"position":"6275,950","size":"100,100"}
+A nation remembered me in its struggle.
+
+(click: ?page)[
+(go-to: "Return to sky")
+]
+
+
+
+
+:: Old Body {"position":"1875,550","size":"100,100"}
+Even in this body, I feel the shadows of old wings.
+
+[[He seems familiar… -> Outcome 2]]
+[[He speaks like an old soul. -> Outcome 2]]
+
+
+
+
+:: Open House {"position":"1250,550","size":"100,100"}
+[Ambient: laughter, clatter of plates, kuih aromas]
+
+A Deepavali open house. Malay, Chinese, Indian families mingling easily.
+ Children chase each other across the yard.
+ 
+ (click: ?page)[
+(go-to: "Meena 4")
+]
+
+
+
+
+:: Outcome {"position":"1125,550","size":"100,100"}
+''MEENA:''
+ “Then let’s build places where people meet, not hide.”
+
+(click: ?page)[
+(go-to: "Open House")
+]
+
+
+
+
+:: Rahmanah 1 {"position":"900,400","size":"100,100"}
+''RAHMANAH (laughing softly):''
+ "After 1969… how can I not?
+
+   (click: ?page)[
+  (goto: "Rahmanah 1.1")
+]
+
+
+
+
+:: Rahmanah 1.1 {"position":"900,525","size":"100,100"}
+ I saw streets burn. Neighbours hide. Tears fall.
+ If we build without unity, everything collapses."
+
+   (click: ?page)[
+  (goto: "Fear & Riots")
+]
+
+
+
+
+:: Rahmanah 2 {"position":"1500,550","size":"100,100"}
+RAHMANAH smiles warmly.
+
+''RAHMANAH:''
+ “If only all problems could be solved with kuih.”
+
+(click: ?page)[
+(go-to: "Ameen Enters")
+]
+
+
+
+
+:: Rahmanah 3 {"position":"2850,400","size":"100,100"}
+''RAHMANAH:''
+ “Do you really think so?”
+ 
+ (click: ?page)[
+(go-to: "Ameen 4")
+]
+
+
+
+
+:: Rahmanah 4 {"position":"4800,400","size":"100,100"}
+''RAHMANAH:''
+ “Old? You? Never.”
+ 
+  (click: ?page)[
+(go-to: "Ameen calm")
+]
+
+
+
+
+:: Rahmanah 5 {"position":"5525,550","size":"100,100"}
+''RAHMANAH (smiles softly):''
+ “To leave something for the next generation.
+ 
+   (click: ?page)[
+(go-to: "Rahmanah 5.1")
+]
+
+
+
+
+:: Rahmanah 5.1 {"position":"5525,675","size":"100,100"}
+To say: we were here.
+ We cared.”
+ 
+   (click: ?page)[
+(go-to: "Ameen closes eyes")
+]
+
+
+
+
+:: Rahmanah 6 {"position":"5900,550","size":"100,100"}
+''RAHMANAH (shaken):''
+ “Ameen? What do you mean? Go where?”
+ 
+   (click: ?page)[
+(go-to: "Ameen fades")
+]
+
+
+
+
+:: Rahmanah Studying Blueprints {"position":"2225,400","size":"100,100"}
+''RAHMANAH (studying blueprint):''
+ “This tower… it must reflect us.
+ All of us. Every race, every memory.”
+ 
+ (click: ?page)[
+(go-to: "Meena yelling")
+]
+
+
+
+
+:: Rahmanah firm {"position":"3575,250","size":"100,100"}
+''RAHMANAH (firm):''
+ “No more burning.
+ We want change, not chaos.”
+ 
+  (click: ?page)[
+ (go-to:"Ameen appears")
+ ]
  
  
+
+
+:: Rahmanah watches news {"position":"4550,400","size":"100,100"}
+RAHMANAH watches news of the lockdown.
+
+ (click: ?page)[
+(go-to: "Meena speakerphone")
+]
+
+
+
+
+:: Return to sky {"position":"6400,700","size":"100,100"}
+Now... I return to the sky.
+My wings carry all your stories
+
+   (click: ?page)[
+(go-to: "We endure")
+]
+
+
+
+
+:: S4_Start {"position":"175,250","size":"100,100"}
+[Ambient: distant cheers, roosters, rustling flags]
+
+I have watched kingdoms rise, rivers shift, and empires waver.
+ Now I return once more… not to jungles, but to a nation being born.
  
  
- 
- 
- 
- 
+  (click: ?page)[
+  (goto: "Interaction Meena 1")
+]
+
+
+
+
+:: She pauses {"position":"3100,400","size":"100,100"}
+She pauses — not understanding why his words feel ancient.
+
+
+[[You speak like you’ve lived many lives. -> Outcome 3]]
+[[Hope… yes. That’s what we’re building. -> Outcome 3]]
+[[What makes you so certain?-> Outcome 3]]
+
+
+
+
+:: The Nation Builds {"position":"650,400","size":"100,100"}
+[Ambient: construction tools, radio playing “Tanah Pusaka”]
+
+''RAHMANAH (now a young woman, an architect):''
+"The structure must hold. Not just technically… socially."
+
+   (click: ?page)[
+  (goto: "Meena 3")
+]
+
+
+
+
+:: The Storm of Reformasi {"position":"3325,250","size":"100,100"}
+[Ambient: heavy rain, distant chants, police sirens, whispered fear]
+
+RAHMANAH and MEENA watch from a rooftop as crowds gather.
+Banners. Cries. Anguish. Determination.
+
+ (click: ?page)[
+ (go-to:"Meena 5")
+ ]
+
+
+
+
+:: We endure {"position":"6525,700","size":"100,100"}
+This land endures.
+Its people endure.
+
+(click: ?page)[
+(go-to: "I shall return")
+]
+
+
