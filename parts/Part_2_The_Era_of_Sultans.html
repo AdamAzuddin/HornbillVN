@@ -13,7 +13,8 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play SCene 2.</tw-noscript></noscript></tw-story>
-<tw-storydata name="SCene 2" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="0A45FEA7-2208-4242-862A-E7ABC5590E7C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.center-end-text {
+<tw-storydata name="SCene 2" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="0A45FEA7-2208-4242-862A-E7ABC5590E7C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+.center-end-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,22 +22,65 @@
   text-align: center;
   font-size: 1.6rem;
   line-height: 1.8;
-  height: 100vh;
 }
 .fade-screen {
-  width: 100%;
-  height: 100vh;
-  background: black;
-  animation: fadeIn 2s forwards;
-  filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url('../assets/images/Background-Part-2-Scene-5.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: blurToBlack 4s ease-in forwards;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes blurToBlack {
+  0% {
+    filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: normal;
+    color: rgba(255, 255, 255, 1);
+  }
+  60% {
+    filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: normal;
+    color: rgba(255, 255, 255, 1);
+  }
+  80% {
+    filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    filter: blur(30px);
+    background-color: rgba(0, 0, 0, 1);
+    background-blend-mode: darken;
+    color: rgba(255, 255, 255, 0);
+  }
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+tw-story[tags~="scene5a"] {
+  animation: blurToBlack 10s forwards !important;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+setTimeout(function() {
+  var story = document.querySelector("tw-story");
+  if (story && story.getAttribute("tags") && story.getAttribute("tags").indexOf("scene5a") !== -1) {
+    setTimeout(function() {
+      window.location.href = "./Part_3_The_British_Era.html";
+    }, 10000);
+  }
+}, 100);
+</script>
 <tw-passagedata pid="1" name="Melaka_Riverbank" tags="scene0" position="900,300" size="100,100">
     A warm haze settles over the Melaka River as ships from Java, Gujarat, and China crowd the harbor. The air carries the scents of pepper, sandalwood, and drying fish.
 (click:?page)[
@@ -59,6 +103,7 @@
 (click:?page)[
     (goto: &quot;P_Response_Respect&quot;)
 ]</tw-passagedata><tw-passagedata pid="6" name="Hang_Dayang_Wisdom" tags="scene0" position="1500,300" size="100,100">
+    <img src="../assets/images/Hang-Dayang-Normal_Calm.png" class="sprite">
     “The honour is in recording truth with clarity. Words survive longer than palaces.”
 (click:?page)[
     (goto: &quot;Market_Bazaar_Evening&quot;)
@@ -144,6 +189,7 @@
 (click:?page)[
     (goto: &quot;Trade_Control_Strait&quot;)
 ]</tw-passagedata><tw-passagedata pid="24a" name="Trade_Control_Strait" tags="scene1" position="1300,750" size="100,100">
+    <img src="../assets/images/Hang-Dayang-Normal_Calm.png" class="sprite">
     "Control the strait and you control the flow of the world."         
 (click:?page)[
     (goto: &quot;Post_Choice_Return&quot;)
@@ -330,18 +376,14 @@
     (goto: &quot;P_Faints_Start_Blur&quot;)
 ]</tw-passagedata><tw-passagedata pid="58" name="P_Faints_Start_Blur" tags="scene5" position="1400,1600" size="100,100">
     The world blurs around you as your vision narrows. Your body grows weak and the ground rushes upward.
-(live:2s)[
-    (replace:?page)[
-        (goto:&quot;Fade_Black_Center_Text&quot;)
-    ]
-]</tw-passagedata><tw-passagedata pid="59" name="Fade_Black_Center_Text" tags="scene5" position="1400,1700" size="100,100">&lt;div class=&quot;fade-screen&quot;&gt; &lt;div class=&quot;center-end-text&quot;&gt;
+(click:?page)[
+    (goto: &quot;Fade_Black_Center_Text&quot;)
+]</tw-passagedata>
+<tw-passagedata pid="59" name="Fade_Black_Center_Text" tags="scene5a" position="1400,1700" size="100,100">
 HANG DAYANG:
-“P!!!.........”
-&lt;br&gt;&lt;br&gt;
+"P!!!........."
 Moonlight reflects on the water. The night feels silent and foreboding.
-&lt;/div&gt; &lt;/div&gt;
-<a href="./Part_3_The_British_Era.html">The Prehistoric Era</a>
-</tw-passagedata></tw-storydata>
+</tw-passagedata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
