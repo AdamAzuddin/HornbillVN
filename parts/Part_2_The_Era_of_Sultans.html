@@ -26,6 +26,28 @@
             });
         }
     })
+    // Watch for when the story reaches scene5a
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'tags') {
+                var story = document.querySelector("tw-story");
+                if (story && story.getAttribute("tags") && story.getAttribute("tags").indexOf("scene5a") !== -1) {
+                    setTimeout(function() {
+                        window.location.href = "./Part_3_The_British_Era.html";
+                    }, 7000);
+                    observer.disconnect(); // Stop observing after triggering
+                }
+            }
+        });
+    });
+    
+    // Start observing after a short delay to ensure tw-story exists
+    setTimeout(function() {
+        var story = document.querySelector("tw-story");
+        if (story) {
+            observer.observe(story, { attributes: true, attributeFilter: ['tags'] });
+        }
+    }, 100);
   </script>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play SCene 2.</tw-noscript></noscript></tw-story>
 <tw-storydata name="SCene 2" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="0A45FEA7-2208-4242-862A-E7ABC5590E7C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
@@ -83,18 +105,11 @@
 }
 
 tw-story[tags~="scene5a"] {
-  animation: blurToBlack 10s forwards !important;
+  animation: blurToBlack 7s forwards !important;
 }
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-setTimeout(function() {
-  var story = document.querySelector("tw-story");
-  if (story && story.getAttribute("tags") && story.getAttribute("tags").indexOf("scene5a") !== -1) {
-    setTimeout(function() {
-      window.location.href = "./Part_3_The_British_Era.html";
-    }, 10000);
-  }
-}, 100);
+
 </script>
 <tw-passagedata pid="1" name="Melaka_Riverbank" tags="scene0" position="900,300" size="100,100">A warm haze settles over the Melaka River as ships from Java, Gujarat, and China crowd the harbor. The air carries the scents of pepper, sandalwood, and drying fish.
 (click:?page)[
@@ -293,7 +308,8 @@ setTimeout(function() {
     <img src="../assets/images/Dang-Jelita-Worried.png" class="sprite">There is tension everywhere. Some ships leave early while others arrive armed.
 (click:?page)[
     (goto: &quot;Hang_Dayang_Worried_Storm&quot;)
-]</tw-passagedata><tw-passagedata pid="52" name="Riverside_Midnight" tags="scene5" position="700,1600" size="100,100">The river is quiet beneath the late-night sky. Lantern light trembles across the water as tension lingers in the wind.
+]</tw-passagedata><tw-passagedata pid="52" name="Riverside_Midnight" tags="scene5" position="700,1600" size="100,100">
+    The river is quiet beneath the late-night sky. Lantern light trembles across the water as tension lingers in the wind.
 (click:?page)[
     (goto: &quot;Dang_Jelita_Worried_Ships&quot;)
 ]</tw-passagedata><tw-passagedata pid="53" name="Hang_Dayang_Worried_Storm" tags="scene5" position="900,1600" size="100,100">
