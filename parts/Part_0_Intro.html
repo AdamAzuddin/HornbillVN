@@ -10,83 +10,130 @@
    <script src="../index.js" defer></script>
 </head>
 <body>
+<video autoplay loop muted playsinline id="bg-video">
+    <source src="../assets/space_travel.mp4" type="video/mp4">
+</video>
+<style>
+    body {
+        background-color: transparent !important;
+    }
+    tw-story {
+        background-color: transparent !important;
+        z-index: 1;
+    }
+</style>
+<audio src="../assets/sound/scene0.mp3" autoplay loop></audio>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const audio = document.querySelector('audio');
+        if (audio) {
+            audio.play().catch(() => {
+                const play = () => {
+                    audio.play();
+                    document.removeEventListener('click', play, { capture: true });
+                };
+                document.addEventListener('click', play, { capture: true });
+            });
+        }
+
+                const observer = new MutationObserver(() => {
+                    const passage = document.querySelector('tw-passage');
+                    if (passage && passage.textContent.includes("Then we fall with the dawn")) {
+                        if (!passage.dataset.processed) {
+                            passage.dataset.processed = "true";
+                            var video = document.getElementById('bg-video');
+                            if (audio) audio.pause();
+                            if (video) video.style.display = 'none';
+                            document.body.style.setProperty('background-color', 'black', 'important');
+                            setTimeout(function() {
+                                if (video) {
+                                    video.src = "../assets/space_jump.mp4";
+                                    video.style.display = 'block';
+                                    video.play();
+                                }
+                                if (audio) audio.play();
+                            }, 3000);
+                        }
+                    }
+                });
+                const story = document.querySelector('tw-story');
+                if (story) observer.observe(story, { childList: true });
+    });
+</script>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Part_0_Intro.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Part_0_Intro" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="451DB11A-EC3D-4DC3-9D95-95D4913B6E90" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="150,75" size="100,100">Before time had names… before land learned its borders…
-There was a presence that watched.
+<tw-storydata name="Part_0_Intro" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="451DB11A-EC3D-4DC3-9D95-95D4913B6E90" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="centered" position="150,75" size="100,100"><span class="narrator">Before time had names… before land learned its borders…
+There was a presence that watched.</span>
 
 (click: ?page)[
 (go-to: &quot;1&quot;)
-]</tw-passagedata><tw-passagedata pid="2" name="1" tags="" position="275,75" size="100,100">Not a god.
+]</tw-passagedata><tw-passagedata pid="2" name="1" tags="centered" position="275,75" size="100,100"><span class="narrator">Not a god.
  Not a man.
  But a memory that moved with the wind.
- 
+ </span>
  (click: ?page)[
 (go-to: &quot;2&quot;)
-]</tw-passagedata><tw-passagedata pid="3" name="2" tags="" position="425,75" size="100,100">It has worn many forms—
+]</tw-passagedata><tw-passagedata pid="3" name="2" tags="centered" position="425,75" size="100,100"><span class="narrator">It has worn many forms—
  a bird upon the canopy,
  a watcher in the crowd,
- a voice carried through breath and bone.
+ a voice carried through breath and bone.</span>
  
   (click: ?page)[
 (go-to: &quot;3&quot;)
-]</tw-passagedata><tw-passagedata pid="4" name="3" tags="" position="550,75" size="100,100">Across ages, it does not live lives of its own.
- It passes through them.
+]</tw-passagedata><tw-passagedata pid="4" name="3" tags="centered" position="550,75" size="100,100"><span class="narrator">Across ages, it does not live lives of its own.
+ It passes through them.</span>
 
   (click: ?page)[
 (go-to: &quot;4&quot;)
-]</tw-passagedata><tw-passagedata pid="5" name="4" tags="" position="675,75" size="100,100">It does not choose their paths,
+]</tw-passagedata><tw-passagedata pid="5" name="4" tags="centered" position="675,75" size="100,100"><span class="narrator">It does not choose their paths,
  but it remembers their footsteps.
- 
+ </span>
    (click: ?page)[
 (go-to: &quot;5&quot;)
-]</tw-passagedata><tw-passagedata pid="6" name="5" tags="" position="825,75" size="100,100">As you walk through these eras,
- you will not be one soul alone.
- 
-    (click: ?page)[
+]</tw-passagedata><tw-passagedata pid="6" name="5" tags="centered" position="825,75" size="100,100"><span class="narrator">As you walk through these eras,
+ you will not be one soul alone.</span>
+   (click: ?page)[
 (go-to: &quot;6&quot;)
-]</tw-passagedata><tw-passagedata pid="7" name="6" tags="" position="950,75" size="100,100">You will inhabit lives —
+]</tw-passagedata><tw-passagedata pid="7" name="6" tags="centered" position="950,75" size="100,100"><span class="narrator">You will inhabit lives —
  feel their doubts, their courage, their grief —
- while the ancient witness watches beside you,
+ while the ancient witness watches beside you,</span>
 
     (click: ?page)[
 (go-to: &quot;7&quot;)
-]</tw-passagedata><tw-passagedata pid="8" name="7" tags="" position="1075,75" size="100,100"> sometimes whispering,
- sometimes silent.
- 
-     (click: ?page)[
+]</tw-passagedata><tw-passagedata pid="8" name="7" tags="centered" position="1075,75" size="100,100"> <span class="narrator">sometimes whispering,
+ sometimes silent.</span>
+   (click: ?page)[
 (go-to: &quot;8&quot;)
-]</tw-passagedata><tw-passagedata pid="9" name="8" tags="" position="1200,75" size="100,100">You are not the Hornbill.
+]</tw-passagedata><tw-passagedata pid="9" name="8" tags="centered" position="1200,75" size="100,100"><span class="narrator">are not the Hornbill.
  Yet the Hornbill walks with you.
- 
+ </span> 
  (click: ?page)[
 (go-to: &quot;9&quot;)
-]</tw-passagedata><tw-passagedata pid="10" name="9" tags="" position="1350,75" size="100,100">You are not bound to one body,
+]</tw-passagedata><tw-passagedata pid="10" name="9" tags="centered" position="1350,75" size="100,100"><span class="narrator">You are not bound to one body,
  but to a thread that runs through all of them.
- 
+ </span>
   (click: ?page)[
 (go-to: &quot;10&quot;)
 ]
- </tw-passagedata><tw-passagedata pid="11" name="10" tags="" position="1500,75" size="100,100">History will unfold not as a lesson,
- but as a living memory.
- 
+ </tw-passagedata><tw-passagedata pid="11" name="10" tags="centered" position="1500,75" size="100,100"><span class="narrator">History will unfold not as a lesson,
+ but as a living memory.</span>
    (click: ?page)[
 (go-to: &quot;11&quot;)
-]</tw-passagedata><tw-passagedata pid="12" name="11" tags="" position="1650,75" size="100,100">Listen closely.
-
+]</tw-passagedata><tw-passagedata pid="12" name="11" tags="centered" position="1650,75" size="100,100"><span class="narrator">Listen closely.
+</span>
    (click: ?page)[
 (go-to: &quot;12&quot;)
-]</tw-passagedata><tw-passagedata pid="13" name="12" tags="" position="1800,75" size="100,100">The land remembers.
+]</tw-passagedata><tw-passagedata pid="13" name="12" tags="centered" position="1800,75" size="100,100"><span class="narrator">The land remembers.
  And now… so do you.
- 
+ </span>
     (click: ?page)[
 (go-to: &quot;13&quot;)
-]</tw-passagedata><tw-passagedata pid="14" name="13" tags="" position="1950,75" size="100,100">“To begin our  journey, we must take a form.”
-CHOICE:
-[[Become the Hornbill again.| Outcome]]
-[[Take the shape of a whisper in the forest.| Outcome]]
-[[Follow the scent of the ancestor’s breath. | Outcome]]
-</tw-passagedata><tw-passagedata pid="15" name=" Outcome" tags="" position="2075,75" size="100,100">Then we fall with the dawn…
-…into the valley where stone remembers every footstep.
+]</tw-passagedata><tw-passagedata pid="14" name="13" tags="centered" position="1950,75" size="100,100"><span class="narrator">To begin our  journey, we must take a form.
+</span>
+[[Become the Hornbill again.|Outcome]]
+[[Take the shape of a whisper in the forest.|Outcome]]
+[[Follow the scent of the ancestor’s breath. |Outcome]]
+</tw-passagedata><tw-passagedata pid="15" name="Outcome" tags="centered" position="2075,75" size="100,100"><span class="narrator">Then we fall with the dawn…
+…into the valley where stone remembers every footstep.</span>
 <a href="./Part_1_Prehistoric_Era.html">The Prehistoric Era</a>
 </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";

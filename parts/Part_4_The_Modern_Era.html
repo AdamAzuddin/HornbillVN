@@ -11,6 +11,21 @@
     <script src="../index.js" defer></script>
 </head>
 <body>
+  <audio src="../assets/sound/part4.mp3" autoplay loop></audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.querySelector('audio');
+        if (audio) {
+            audio.play().catch(() => {
+                const play = () => {
+                    audio.play();
+                    document.removeEventListener('click', play, { capture: true });
+                };
+                document.addEventListener('click', play, { capture: true });
+            });
+        }
+    })
+  </script>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Part_4_The_Modern_Era.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Part_4_The_Modern_Era" startnode="11" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="397A29F2-2269-4577-9F89-04E5E4474F33" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Outcome" tags="scene1" position="1125,550" size="100,100"><img src="../assets/images/Meena-Young-Adult.png" class="sprite">&#39;&#39;MEENA:&#39;&#39;
  “Then let’s build places where people meet, not hide.”

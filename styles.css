@@ -213,3 +213,19 @@ tw-link.original-link-hidden {
         font-size: 0.8em !important;
     }
 }
+
+/* Special class for vertically centered passages */
+tw-story[tags~="centered"] {
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+#bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
