@@ -12,6 +12,21 @@
     <script src="../index.js" defer></script>
 </head>
 <body>
+    <audio src="../assets/sound/part2.mp3" autoplay loop></audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.querySelector('audio');
+        if (audio) {
+            audio.play().catch(() => {
+                const play = () => {
+                    audio.play();
+                    document.removeEventListener('click', play, { capture: true });
+                };
+                document.addEventListener('click', play, { capture: true });
+            });
+        }
+    })
+  </script>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play SCene 2.</tw-noscript></noscript></tw-story>
 <tw-storydata name="SCene 2" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="0A45FEA7-2208-4242-862A-E7ABC5590E7C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 .center-end-text {

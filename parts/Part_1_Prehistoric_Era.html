@@ -11,6 +11,21 @@
     <script src="../index.js" defer></script>
 </head>
 <body>
+  <audio src="../assets/sound/part1.mp3" autoplay loop></audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.querySelector('audio');
+        if (audio) {
+            audio.play().catch(() => {
+                const play = () => {
+                    audio.play();
+                    document.removeEventListener('click', play, { capture: true });
+                };
+                document.addEventListener('click', play, { capture: true });
+            });
+        }
+    })
+  </script>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Part_1_Prehistoric_Era.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Part_1_Prehistoric_Era" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="21E91320-1AFB-4734-9D3A-85E2EE1CD6DC" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="scene1" position="75,150" size="100,100">Here, 11,000 years before the sultanates,
  a community tends to one they will one day call Perak Man.

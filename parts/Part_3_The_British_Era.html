@@ -11,6 +11,21 @@
     	<script src="../index.js" defer></script>
 </head>
 <body>
+	<audio src="../assets/sound/part3.mp3" autoplay loop></audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.querySelector('audio');
+        if (audio) {
+            audio.play().catch(() => {
+                const play = () => {
+                    audio.play();
+                    document.removeEventListener('click', play, { capture: true });
+                };
+                document.addEventListener('click', play, { capture: true });
+            });
+        }
+    })
+  </script>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Part_3_The_British_Era.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Part_3_The_British_Era" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="B0390F2C-540C-4BEA-AA7C-C50B09438A07" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="1-1" tags="" position="400,200" size="100,100">CHE AZIZAH: “Ameen? Are you ready? The children are waiting.”
 AMEEN closes the notebook.
