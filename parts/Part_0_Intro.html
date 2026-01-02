@@ -44,6 +44,29 @@
                 document.addEventListener('click', play, { capture: true });
             });
         }
+
+                const observer = new MutationObserver(() => {
+                    const passage = document.querySelector('tw-passage');
+                    if (passage && passage.textContent.includes("Then we fall with the dawn")) {
+                        if (!passage.dataset.processed) {
+                            passage.dataset.processed = "true";
+                            var video = document.getElementById('bg-video');
+                            if (audio) audio.pause();
+                            if (video) video.style.display = 'none';
+                            document.body.style.setProperty('background-color', 'black', 'important');
+                            setTimeout(function() {
+                                if (video) {
+                                    video.src = "../assets/space_jump.mp4";
+                                    video.style.display = 'block';
+                                    video.play();
+                                }
+                                if (audio) audio.play();
+                            }, 3000);
+                        }
+                    }
+                });
+                const story = document.querySelector('tw-story');
+                if (story) observer.observe(story, { childList: true });
     });
 </script>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Part_0_Intro.</tw-noscript></noscript></tw-story>
@@ -115,10 +138,10 @@ There was a presence that watched.</span>
 (go-to: &quot;13&quot;)
 ]</tw-passagedata><tw-passagedata pid="14" name="13" tags="centered" position="1950,75" size="100,100"><span class="narrator">To begin our  journey, we must take a form.
 </span>
-[[Become the Hornbill again.| Outcome]]
-[[Take the shape of a whisper in the forest.| Outcome]]
-[[Follow the scent of the ancestor’s breath. | Outcome]]
-</tw-passagedata><tw-passagedata pid="15" name=" Outcome" tags="centered" position="2075,75" size="100,100"><span class="narrator">Then we fall with the dawn…
+[[Become the Hornbill again.|Outcome]]
+[[Take the shape of a whisper in the forest.|Outcome]]
+[[Follow the scent of the ancestor’s breath. |Outcome]]
+</tw-passagedata><tw-passagedata pid="15" name="Outcome" tags="centered" position="2075,75" size="100,100"><span class="narrator">Then we fall with the dawn…
 …into the valley where stone remembers every footstep.</span>
 <a href="./Part_1_Prehistoric_Era.html">The Prehistoric Era</a>
 </tw-passagedata></tw-storydata>
