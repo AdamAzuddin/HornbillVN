@@ -213,3 +213,9 @@ tw-link.original-link-hidden {
         font-size: 0.8em !important;
     }
 }
+
+/* Special class for vertically centered passages */
+tw-story[tags~="centered"] {
+    justify-content: center;
+    padding-bottom: 0;
+}
