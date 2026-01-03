@@ -1,0 +1,47 @@
+tw-story[tags~="scene0"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-0.png");
+}
+
+tw-story[tags~="scene1"]{
+    background-image: url("../assets/images/BackGround-Part-4-Scene-1.png");
+}
+
+tw-story[tags~="scene2"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-2.png");
+}
+
+tw-story[tags~="scene3"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-3.png");
+}
+
+tw-story[tags~="scene4"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-4.png");
+}
+
+tw-story[tags~="scene5"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-5.png");
+}
+
+tw-story[tags~="scene6"]{
+    background-image: url("../assets/images/Background-Part-4-Scene-6.png");
+}
+
+tw-story[tags~="sceneMontage"]{
+    background-image: url("../assets/images/Montage.png");
+}
+
+tw-story[tags~="sceneKLCC"]{
+    background-image: url("../assets/images/Part-4-Scene-6.png");
+}
+
+tw-story[tags~="sceneLockDown"]{
+    background-image: url("../assets/images/BackGround-Room-LockDown-News.png");
+}
+
+tw-story[tags~="sceneGolden1"]{
+    background-image: url("../assets/images/GoldenHornbill1.png");
+}
+
+tw-story[tags~="sceneGolden2"]{
+    background-image: url("../assets/images/GoldenHornbill2.png");
+}
