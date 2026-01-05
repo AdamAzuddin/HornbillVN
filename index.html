@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>That Time I got Reincarnated As a Hornbill</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ffc107; /* A golden/yellow color */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 2em;
+        }
+        .start-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #1a1a1a;
+            background-color: #ffc107;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .start-button:hover {
+            background-color: #ffca2c;
+            transform: translateY(-2px);
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>That Time I got Reincarnated As a Hornbill</h1>
-    <a href="./parts/Part_0_Intro.html">Start</a>
+    <div class="container">
+        <h1>That Time I got Reincarnated As a Hornbill</h1>
+        <p>
+            A web visual novel that follows the story of a hornbill across multiple eras of Malaysian history.
+        </p>
+        <a href="./parts/Part_0_Intro.html" class="start-button">Start</a>
+    </div>
+    <footer>
+        In collaboration with <a href="https://badanwarisanmalaysia.org/" target="_blank" rel="noopener noreferrer">Badan Warisan Malaysia</a>.
+    </footer>
 </body>
 </html>
